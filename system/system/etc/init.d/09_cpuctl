@@ -1,0 +1,7 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Apply cpuctl tweaks
+echo 1024 > /dev/cpuctl/cpu.shares
+echo 800000 > /dev/cpuctl/cpu.rt_runtime_us
+echo 1000000 > /dev/cpuctl/cpu.rt_period_us
+echo 62 > /dev/cpuctl/bg_non_interactive/cpu.shares

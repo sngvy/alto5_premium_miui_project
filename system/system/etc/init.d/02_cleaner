@@ -1,0 +1,40 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Clean all logs in system
+busybox rm -f /cache/*.apk 2>/dev/null
+busybox rm -f /cache/*.tmp 2>/dev/null
+busybox rm -f /cache/*.log 2>/dev/null
+busybox rm -f /cache/*.txt 2>/dev/null
+busybox rm -f /cache/recovery/* 2>/dev/null
+busybox rm -f /data/*.log 2>/dev/null
+busybox rm -f /data/*.txt 2>/dev/null
+busybox rm -f /data/anr/*.log 2>/dev/null
+busybox rm -f /data/anr/*.txt 2>/dev/null
+busybox rm -f /data/backup/pending/*.tmp 2>/dev/null
+busybox rm -f /data/cache/*.* 2>/dev/null
+busybox rm -f /data/dalvik-cache/*.apk 2>/dev/null
+busybox rm -f /data/dalvik-cache/*.tmp 2>/dev/null
+busybox rm -f /data/dalvik-cache/*.log 2>/dev/null
+busybox rm -f /data/dalvik-cache/*.txt 2>/dev/null
+busybox rm -f /data/data/*.log 2>/dev/null
+busybox rm -f /data/data/*.txt 2>/dev/null
+busybox rm -f /data/log/*.log 2>/dev/null
+busybox rm -f /data/log/*.txt 2>/dev/null
+busybox rm -f /data/local/*.apk 2>/dev/null
+busybox rm -f /data/local/*.log 2>/dev/null
+busybox rm -f /data/local/*.txt 2>/dev/null
+busybox rm -f /data/local/tmp/*.log 2>/dev/null
+busybox rm -f /data/local/tmp/*.txt 2>/dev/null
+busybox rm -f /data/last_alog/*.log 2>/dev/null
+busybox rm -f /data/last_alog/*.txt 2>/dev/null
+busybox rm -f /data/last_kmsg/*.log 2>/dev/null
+busybox rm -f /data/last_kmsg/*.txt 2>/dev/null
+busybox rm -f /data/mlog/* 2>/dev/null
+busybox rm -f /data/tombstones/*.log 2>/dev/null
+busybox rm -f /data/tombstones/*.txt 2>/dev/null
+busybox rm -f /data/system/*.log 2>/dev/null
+busybox rm -f /data/system/*.txt 2>/dev/null
+busybox rm -f /data/system/dropbox/*.log 2>/dev/null
+busybox rm -f /data/system/dropbox/*.txt 2>/dev/null
+busybox rm -f /data/system/usagestats/*.log 2>/dev/null
+busybox rm -f /data/system/usagestats/*.txt 2>/dev/null

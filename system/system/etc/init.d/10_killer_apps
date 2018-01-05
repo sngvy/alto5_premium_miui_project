@@ -1,0 +1,28 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Force stop Google Play Services
+am force-stop com.google.android.gms
+# Force stop Google Services Framework
+am force-stop com.google.process.gapps
+# Force stop Google Partner Setup
+am force-stop com.google.android.partnersetup
+# Force stop Google Sync
+am force-stop com.google.android.syncadapters.contacts
+# Force stop Play Market
+am force-stop com.android.vending
+# Force stop Google App
+am force-stop com.google.android.googlequicksearchbox
+# Force stop MiCloud
+am force-stop com.xiaomi.xmsf
+# Force stop FindDevice
+am force-stop com.xiaomi.finddevice
+# Force stop mediaservers
+am force-stop android.process.media | kill -9 `busybox pidof mediaserver`
+# Force stop DownloadsProviders
+am force-stop com.android.providers.downloads.ui | am force-stop com.android.providers.downloads
+# Force stop CalendarProvider
+am force-stop com.android.providers.calendar
+# Force stop WPS
+am force-stop cn.wps.moffice_eng
+# Force stop Instagram
+am force-stop com.instagram.android

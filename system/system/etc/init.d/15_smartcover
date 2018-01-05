@@ -1,0 +1,15 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Copyright (c) 2015, TCT. All rights reserved.
+# Check setting state
+state=`settings get system hall`;
+enabled=1;
+if [ "$state" -eq "$enabled" ]; then
+# Show message in logcat output
+	echo Smart Cover is enabled. Starting listener daemon...
+else
+# Run toogle script
+	sh /system/bin/disable_hall && echo 0 > /sys/devices/soc.0/gpio_keys.65/init_ok && exit
+fi
+# Start hall_listener
+su -c /system/bin/hall_listener

@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Remount /system
+mount -o rw,remount,rw /system
+# Disable hall_listener daemon
+chmod 0440 /system/etc/init.d/15_smartcover
+# Remount /system
+mount -o ro,remount,ro /system

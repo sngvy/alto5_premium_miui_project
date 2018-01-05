@@ -1,0 +1,14 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Check setting state
+state=`settings get system ttl`;
+enabled=1;
+if [ "$state" -eq "$enabled" ]; then
+# Show message in logcat output
+	echo TTL fixation is enabled. Calling iptables...
+else
+# Run toogle script
+	sh /system/bin/disable_ttl && exit
+fi
+# Set TTL to 64
+iptables -t mangle -A POSTROUTING -j TTL --ttl-set 64

@@ -1,0 +1,11 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# This script will uninstall Sberbank
+msg -t Пожалуйста, подождите...
+pm uninstall ru.sberbankmobile
+mount -o rw,remount,rw /data
+rm -rf /data/app/Sberbank
+mount -o ro,remount,ro /data
+msg -t Перезапускаем систему...
+sleep 5
+reboot

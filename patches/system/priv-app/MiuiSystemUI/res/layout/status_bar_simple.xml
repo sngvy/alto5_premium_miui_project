@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.SimpleStatusBar android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.phone.BatteryIndicator android:layout_gravity="top" android:id="@id/battery_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/battery_indicator" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/icons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="3.0dip" android:paddingEnd="3.0dip">
+        <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:gravity="start|center" android:id="@id/clock" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+        <LinearLayout android:gravity="start|center" android:id="@id/notification_icon_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toEndOf="@id/clock">
+            <com.android.systemui.statusbar.phone.IconMerger android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notificationIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/notification_more_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/stat_notify_more" />
+        </LinearLayout>
+        <com.android.systemui.statusbar.phone.StatusBarIcons android:gravity="end|center" android:id="@id/statusbar_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/moreIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/stat_notify_more" />
+            <com.android.systemui.statusbar.NetworkSpeedView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:gravity="end|center" android:id="@id/network_speed_view" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_marginEnd="3.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/statusIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/signal_cluster_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_weight="1.0">
+                <include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/signal_cluster_view" />
+                <include android:id="@id/signal_cluster2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/signal_cluster_view" />
+            </LinearLayout>
+            <ImageView android:id="@id/battery_charging_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.g84.g84view.Taptap android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.android.systemui.statusbar.phone.BatteryStatusIconView android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@style/TextAppearance.StatusBar.Battery" android:gravity="center" android:id="@id/battery_num" android:paddingBottom="@dimen/statusbar_battery_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="1.0dip" android:layout_marginEnd="3.0dip" />
+            </com.g84.g84view.Taptap>
+        </com.android.systemui.statusbar.phone.StatusBarIcons>
+    </RelativeLayout>
+</com.android.systemui.statusbar.phone.SimpleStatusBar>

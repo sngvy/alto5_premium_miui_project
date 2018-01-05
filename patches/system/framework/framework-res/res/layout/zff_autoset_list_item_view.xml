@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerHorizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/zff_autoset_listImage" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_alignParentLeft="true" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/zff_autoset_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/zff_autoset_listImage">
+        <TextView android:id="@+id/zff_autoset_listText" android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginTop="5.0dip" android:paddingEnd="40.0dip" android:text="Medium Text" android:layout_centerVertical="true" />
+        <TextView android:id="@+id/zff_autoset_listTextSecondary" android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:paddingEnd="35.0dip" android:text="Small Text" android:layout_below="@+id/zff_autoset_linearLayout" />
+    </LinearLayout>
+    <RadioButton android:id="@+id/zff_autoset_listRadioButton" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerVertical="true" android:layout_alignParentRight="true" />
+    <CheckBox android:id="@+id/zff_autoset_listCheckBox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerVertical="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

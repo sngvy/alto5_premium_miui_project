@@ -1,0 +1,32 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Check setting state
+state=`settings get system adoptable`;
+enabled=1;
+if [ "$state" -eq "$enabled" ]; then
+# Show message in logcat output
+	echo Adoptable Storage is enabled. Binding SD Card...
+else
+# Run toogle script
+	sh /system/bin/disable_adoptable && exit
+fi
+# Create space for emulated sdcard on sdcard1
+busybox mkdir /mnt/media_rw/sdcard1/AdoptableStorage
+# Check sdcard1 state
+storage=`/mnt/media_rw/sdcard1/AdoptableStorage`;
+if ! [ -d "$storage" ]; then
+# Copy folders to the sdcard1
+	busybox cp -r /data/media/* /mnt/media_rw/sdcard1/AdoptableStorage
+# Delete folders from the emulated sdcard
+	busybox rm -r /data/media/0/* && busybox rm -r /data/media/legacy/* && busybox rm -r /data/media/obb/*
+# Fix for TWRP
+	busybox mkdir /data/media/0/TWRP && busybox cp -r /mnt/media_rw/sdcard1/AdoptableStorage/0/TWRP/.twrps /data/media/0/TWRP
+# Fix for mediaserver
+	cd /data/media/0 && busybox touch .nomedia
+# Bind to the emulated sdcard
+	busybox mount -o bind /mnt/media_rw/sdcard1/AdoptableStorage /data/media
+# Show the readiness message
+	msg -n Карта памяти успешно подключена title=AdoptableStorage
+else
+	msg -n Карта памяти не установлена title=AdoptableStorage
+fi

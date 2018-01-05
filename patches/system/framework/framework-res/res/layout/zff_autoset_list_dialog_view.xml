@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_height="10.0dip" android:layout_width="fill_parent" />
+    <EditText android:id="@+id/zff_autoset_search_text" android:visibility="gone" android:minWidth="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" />
+    <TextView android:id="@+id/zff_autoset_filter" android:gravity="start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="italic" android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:singleLine="false" android:maxLines="3" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentLeft="true" />
+    <Button android:id="@+id/zff_autoset_path" android:gravity="start" android:visibility="gone" style="?android:attr/buttonBarButtonStyle" android:textStyle="italic" android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\u22ef" android:singleLine="false" android:maxLines="3" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" />
+    <ListView android:id="@+id/zff_autoset_listDialog" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:choiceMode="singleChoice" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+       <ProgressBar android:id="@+id/zff_autoset_progressBar" style="?android:attr/progressBarStyle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_below="@+id/zff_autoset_search_text" />
+       <TextView android:id="@+id/zff_autoset_progressText" android:layout_gravity="center_vertical" android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="720" height="1280"/>
+		<author>TeamWin</author>
+		<title>TWRP</title>
+		<description>splash screen</description>
+		<themeversion>1</themeversion>
+	</details>
+
+	<resources>
+		<font name="font_l" filename="Medium.ttf" size="52"/>
+		<image name="splash_s" filename="splash" retainaspect="1"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_width" value="720"/>
+		<variable name="screen_height" value="1280"/>
+		<variable name="background_color" value="#FFFFFF"/>
+		<variable name="header_color" value="#555555"/>
+	</variables>
+
+	<pages>
+		<page name="splash">
+			<background color="%background_color%"/>
+
+			<!-- fill color="%header_color%">
+				<placement x="0" y="0" w="%screen_width%" h="456"/>
+			</fill-->
+
+			<image>
+				<image resource="splash_s"/>
+				<placement x="0" y="0" placement="0"/>
+			</image>
+
+			<text color="%header_color%">
+				<font resource="font_l"/>
+				<placement x="560" y="1650" placement="5"/>
+				<text>Recovery Project %tw_version%</text>
+			</text>
+		</page>
+	</pages>
+</recovery>
+

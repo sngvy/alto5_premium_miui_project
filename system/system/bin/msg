@@ -1,0 +1,46 @@
+#!/system/bin/sh
+dir=/data/data/com.android.msg/files
+! [ -d $dir ] && mkdir $dir &>/dev/null
+cd $dir 2>/dev/null
+rm * &>/dev/null
+if [ "$1" = "-t" ] && [ "$2" ]
+then
+	(text=$@ && am start -a android.intent.action.MAIN -e message "${text#* }" -n com.android.msg/.ShowToast)&>/dev/null
+elif [ "$1" = "-a" ] && [ "$2" ]
+then
+	(text=$@ && am start -a android.intent.action.MAIN -e message "${text#* }" -n com.android.msg/.ShowAlert 1>/dev/null &&
+    if [ "$(echo $text | grep wait=true)" -o "$(echo $text | grep edit=true)" -o "$(echo $text | grep button)" ]
+	then
+		until [ -f button* ]
+		do
+			sleep 2
+		done
+	for button in button*
+	do
+	    echo $button $(cat $button)
+	done
+    fi) 2>/dev/null
+elif [ "$1" = "-n" ] && [ "$2" ]
+then
+	(text=$@ && am start -a android.intent.action.MAIN -e message "${text#* }" -n com.android.msg/.ShowNotification &&
+	if [ "$(echo $text | grep wait=true)" ]
+	then
+		until [ -f notif ]
+		do
+			sleep 2
+		done
+	fi) &>/dev/null
+else
+echo 'ShowMessage (version 1.6) is a applet to display the information in the user interface with shell command.
+[Need Root]
+------------------
+Alert Dialog: msg -a TEXT
+Options:
+title=TEXT, button1=NAME, button2=NAME, button3=NAME, wait=true, edit=true
+
+Notification: msg -n TEXT
+Options:
+title=TEXT, wait=true, sound=true
+
+Toast: msg -t TEXT'
+fi

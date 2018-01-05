@@ -1,0 +1,15 @@
+Standard delay does not allow to quickly turn on the touch panel.
+Let's correct this misunderstanding!
+---
+
+--- a/drivers/input/touchscreen/tp_FT5436/ft5x06_ts.c
++++ b/drivers/input/touchscreen/tp_FT5436/ft5x06_ts.c
+@@ -1023,7 +1023,7 @@
+ 		data->suspended = false;
+ 		/* [PLATFORM]-Mod by TCTNB.ZXZ, PR-890257, 2015/01/07, optimize resume time*/
+ 		//msleep(100);
+-		msleep(10);
++		msleep(5);
+ 		return 0 ;
+ 	}
+ 

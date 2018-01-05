@@ -1,0 +1,17 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# This script will uninstall Sberbank and reinstall it with patched version
+msg -t Пожалуйста, подождите...
+pm uninstall ru.sberbankmobile
+mount -o rw,remount,rw /data
+cd /data
+cp -r Sberbank app
+chmod 0755 /data/app/Sberbank
+chmod 0644 /data/app/Sberbank/Sberbank.apk
+chmod -R 0755 /data/app/Sberbank/lib
+busybox chgrp -R system /data/app/Sberbank
+busybox chown -R system /data/app/Sberbank
+mount -o ro,remount,ro /data
+msg -t Перезапускаем систему...
+sleep 5
+reboot

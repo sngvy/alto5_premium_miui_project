@@ -1,0 +1,3 @@
+#!/system/bin/sh
+# Catch getevent hall signal and turn on display
+(busybox script -q -c 'getevent /dev/input/event8' /dev/null | while read code; do echo "$code" | grep -q '^0001 00fa 00000000.$' && input keyevent 26; done) < /dev/null &>/dev/null &

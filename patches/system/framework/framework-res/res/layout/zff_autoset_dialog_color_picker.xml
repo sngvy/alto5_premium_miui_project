@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/zff_autoset_dialog_color_picker" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/zff_autoset_hex" />
+        <EditText android:id="@+id/zff_autoset_hex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/zff_autoset_hex_hint" />
+        <ImageButton android:gravity="center" android:id="@+id/zff_autoset_enter" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/zff_autoset_ic_action_set" />
+    </LinearLayout>
+    <android.preference.AutoColorPickerView android:id="@+id/zff_autoset_color_picker_view" android:tag="portrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="7.0dip">
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_white_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.5" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_black_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.5" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_blue_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.5" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_red_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.5" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_green_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.5" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_yellow_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/zff_autoset_press_color_to_apply" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip">
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_old_color_panel" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <TextView android:textSize="20.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/zff_autoset_arrow_right" />
+        <android.preference.AutoColorPickerPanelView android:id="@+id/zff_autoset_new_color_panel" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

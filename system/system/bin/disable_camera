@@ -1,0 +1,4 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Disable package via pm
+pm disable com.android.camera

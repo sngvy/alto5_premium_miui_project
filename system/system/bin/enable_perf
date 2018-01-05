@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Remount /system
+mount -o rw,remount,rw /system
+# Enable perf mode
+chmod 0755 /system/etc/init.d/04_governor_perf
+# Remount /system
+mount -o ro,remount,ro /system

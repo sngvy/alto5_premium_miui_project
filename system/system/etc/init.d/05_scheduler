@@ -1,0 +1,23 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Set variables
+LOOP=`ls -d /sys/block/loop*`;
+RAM=`ls -d /sys/block/ram*`;
+MMC=`ls -d /sys/block/mmc*`;
+ZRAM=`ls -d /sys/block/zram*`;
+for j in $LOOP $RAM $MMC $ZRAM
+do
+# This is not a hard drive!
+echo "0" > $j/queue/rotational;
+# Set r/w buffer
+echo "1024" > $j/queue/read_ahead_kb;
+# Set cfq as default scheduler
+echo "cfq" > $j/queue/scheduler;
+done
+# Apply r/w tweaks
+echo 5 > /sys/class/mmc_host/mmc0/clk_scaling/up_threshold
+echo 75 > /sys/class/mmc_host/mmc0/clk_scaling/down_threshold
+echo 0 > /sys/class/mmc_host/mmc0/clkgate_delay
+echo 5 > /sys/class/mmc_host/mmc1/clk_scaling/up_threshold
+echo 75 > /sys/class/mmc_host/mmc1/clk_scaling/down_threshold
+echo 0 > /sys/class/mmc_host/mmc1/clkgate_delay

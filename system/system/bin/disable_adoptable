@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Remount /system
+mount -o rw,remount,rw /system
+# Disable Adoptable Storage
+chmod 0440 /system/etc/init.d/01_adoptable_storage
+# Remount /system
+mount -o ro,remount,ro /system

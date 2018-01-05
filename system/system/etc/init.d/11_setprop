@@ -1,0 +1,11 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Disable NuPlayer
+setprop persist.sys.media.use-awesome true
+# Enable 2D accelerate
+setprop persist.sys.ui.hw 1
+# Fix device name
+setprop persist.sys.device_name "POP 2 (5) PREMIUM"
+# Get modem version from firmware image
+modemver=`su -c cat /firmware/verinfo/non.ver`
+setprop gsm.version.baseband $modemver

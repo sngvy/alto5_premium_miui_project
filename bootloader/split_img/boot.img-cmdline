@@ -1,0 +1,1 @@
+androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.bootloader=3.10.72@LA.BR.1.2.9_rb1.29-MIUI-Bootloader androidboot.selinux=permissive phy-msm-usb.floated_charger_enable=1

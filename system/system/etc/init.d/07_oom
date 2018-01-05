@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# OOM fix for SystemUI
+echo -17 > /proc/`busybox pidof com.android.systemui`/oom_adj
+# OOM fix for MiuiHome
+echo -17 > /proc/`busybox pidof com.miui.home`/oom_adj
+# OOM fix for OTAUpdater
+echo -17 > /proc/`busybox pidof com.otaupdater`/oom_adj

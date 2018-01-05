@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Run fstrim via busybox
+busybox fstrim /cache
+busybox fstrim /data
+busybox fstrim /system

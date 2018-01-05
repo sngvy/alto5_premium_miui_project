@@ -1,0 +1,6 @@
+{
+    "noflash": "false",
+    "rebootcmd": "reboot recovery",
+    "system_sdpath": "/storage/sdcard1",
+    "recovery_sdpath": "/external_sd"
+}

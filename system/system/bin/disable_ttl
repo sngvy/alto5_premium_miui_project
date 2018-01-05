@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Remount /system
+mount -o rw,remount,rw /system
+# Disable TTL fix
+chmod 0440 /system/etc/init.d/13_ttl
+# Remount /system
+mount -o ro,remount,ro /system

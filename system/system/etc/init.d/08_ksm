@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Scan less pages
+echo 64 > /sys/kernel/mm/ksm/pages_to_scan
+# Increase delay between scans of memory pages
+echo 500 > /sys/kernel/mm/ksm/sleep_millisecs

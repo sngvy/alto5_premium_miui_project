@@ -1,0 +1,16 @@
+#!/system/bin/sh
+# Copyright (c) 2017, Stripalov. All rights reserved.
+# Copyright (c) 2015-2016, FocalTech, TCT. All rights reserved.
+# Version: 1.7
+# Check setting state
+state=`settings get system gesture`;
+enabled=1;
+if [ "$state" -eq "$enabled" ]; then
+# Show message in logcat output
+	echo DT2W is enabled. Starting listener daemon...
+else
+# Run toogle script
+	sh /system/bin/disable_tp_gesture && echo 0 > /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id && exit
+fi
+# Start gesture_listener
+su -c /system/bin/gesture_listener
