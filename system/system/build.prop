@@ -36,7 +36,7 @@ ro.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.product.cpu.abilist64=
 ro.product.locale.language=ru
 ro.product.locale.region=RU
-ro.wifi.channels=
+ro.wifi.channels=13
 ro.board.platform=msm8916
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=alto5_premium
