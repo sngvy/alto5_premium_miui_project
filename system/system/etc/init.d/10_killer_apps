@@ -26,3 +26,9 @@ am force-stop com.android.providers.calendar
 am force-stop cn.wps.moffice_eng
 # Force stop Instagram
 am force-stop com.instagram.android
+# Force stop Sberbank
+am force-stop ru.sberbankmobile
+# Force stop VTB
+am force-stop ru.vtb24.mobilebanking.android
+# Force stop Yandex Disk
+am force-stop ru.yandex.disk
