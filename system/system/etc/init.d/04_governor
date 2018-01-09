@@ -22,7 +22,7 @@ chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
 echo 100000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
 chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
 # Set target_loads
-echo 60 400000:60 800000:70 1094400:80 1209600:90 > /sys/devices/system/cpu/cpufreq/interactive/target_loads
+echo 50 400000:50 533333:60 800000:70 998400:80 1094400:85 1152000:90 1209600:95 > /sys/devices/system/cpu/cpufreq/interactive/target_loads
 chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/target_loads
 # Fix lacks
 echo 100000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
