@@ -1,7 +1,37 @@
 #!/system/bin/sh
-# Copyright (c) 2017, Stripalov. All rights reserved.
-# Apply cpuctl tweaks
-echo 1024 > /dev/cpuctl/cpu.shares
+# Copyright (c) 2018, Stripalov. All rights reserved.
+# Renice dumpsys
+for dump in `dumpsys activity services | busybox grep -i app=ProcessRecord | busybox awk '{ print $2 }' | busybox grep -v '/100[0-9]}' | busybox cut -d: -f1`; do
+busybox renice 7 $dump 
+busybox ionice -c 2 -n 7 -p $dump 
+done;
+# Renice zygote
+zyg=$(busybox pgrep zygote) 
+busybox renice -1 $zyg 
+busybox ionice -c 1 -n 0 -p $zyg 
+# Renice kswapd0
+ksw=$(busybox pgrep kswapd0) 
+busybox renice 0 $ksw 
+busybox ionice -c 2 -n 0 -p $ksw 
+# CPUCTL
+sf=$(busybox pgrep surfaceflinger)
+echo "$sf" > /dev/cpuctl/cgroup.procs 
+for Y in `ls /proc/$sf/task`; do
+echo "$Y" > /dev/cpuctl/tasks
+done;
+if [ -e /dev/cpuctl/bg_non_interactive/cpu.shares ]; then
+echo "96" > /dev/cpuctl/bg_non_interactive/cpu.shares
+fi;
+echo OK > /dev/null 2>&1
+bd=$(busybox pgrep binder)
+echo "$bd" > /dev/cpuctl/cgroup.procs 
+for X in `ls /proc/$bd/task`; do
+echo "$X" > /dev/cpuctl/tasks 
+done;
+if [ -e /dev/cpuctl/cpu.shares ]; then
+echo "1024" > /dev/cpuctl/cpu.shares
+fi;
+echo OK > /dev/null 2>&1
 echo 800000 > /dev/cpuctl/cpu.rt_runtime_us
 echo 1000000 > /dev/cpuctl/cpu.rt_period_us
-echo 62 > /dev/cpuctl/bg_non_interactive/cpu.shares
+
