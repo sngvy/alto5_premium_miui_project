@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="status_bar_height">@android.miui:dimen/android_status_bar_height</item>
+    <item type="dimen" name="status_bar_icon_size">@android.miui:dimen/android_status_bar_icon_size</item>
+    <item type="dimen" name="system_bar_height">@android.miui:dimen/android_system_bar_height</item>
+    <item type="dimen" name="navigation_bar_size">@android.miui:dimen/android_navigation_bar_size</item>
+    <item type="dimen" name="notification_action_height">@android.miui:dimen/android_notification_action_height</item>
+    <item type="dimen" name="notification_action_text_size">@android.miui:dimen/android_notification_action_text_size</item>
+    <item type="dimen" name="notification_content_margin_left_to_icon">@android.miui:dimen/android_notification_content_margin_left_to_icon</item>
+    <item type="dimen" name="notification_content_to_icon_length">@android.miui:dimen/android_notification_content_to_icon_length</item>
+    <item type="dimen" name="notification_large_icon_width">@android.miui:dimen/android_notification_large_icon_width</item>
+    <item type="dimen" name="notification_large_icon_height">@android.miui:dimen/android_notification_large_icon_height</item>
+    <item type="dimen" name="notification_min_height">@android.miui:dimen/android_notification_height</item>
+    <item type="dimen" name="notification_row_min_height">@android.miui:dimen/android_notification_height</item>
+    <item type="dimen" name="notification_padding_left">@android.miui:dimen/android_notification_padding_left</item>
+    <item type="dimen" name="notification_padding_right">@android.miui:dimen/android_notification_padding_right</item>
+    <item type="dimen" name="glowpadview_glow_radius">@android.miui:dimen/android_glowpadview_glow_radius</item>
+    <item type="dimen" name="glowpadview_inner_radius">@android.miui:dimen/android_glowpadview_inner_radius</item>
+    <item type="dimen" name="taskmanager_screenshot_distance_to_bottom">0.5</item>
+    <item type="dimen" name="taskmanager_icon_distance_to_bottom">0.26458</item>
+    <dimen name="status_bar_edge_ignore">5.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_width">130.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_height">115.0dip</dimen>
+    <dimen name="status_bar_recents_right_glow_margin">100.0dip</dimen>
+    <dimen name="navigation_bar_deadzone_size">12.0dip</dimen>
+    <dimen name="navigation_bar_deadzone_size_max">32.0dip</dimen>
+    <dimen name="notification_max_height">263.0dip</dimen>
+    <dimen name="notification_row_max_height">263.0dip</dimen>
+    <item type="dimen" name="status_bar_icon_drawing_alpha">100.0%</item>
+    <dimen name="status_bar_notification_icon_size">12.799988dip</dimen>
+    <dimen name="status_bar_icon_padding">1.5dip</dimen>
+    <dimen name="self_expand_velocity">2000.0dip</dimen>
+    <dimen name="self_collapse_velocity">2000.0dip</dimen>
+    <dimen name="fling_expand_min_velocity">100.0dip</dimen>
+    <dimen name="fling_collapse_min_velocity">200.0dip</dimen>
+    <dimen name="fling_gesture_max_x_velocity">200.0dip</dimen>
+    <dimen name="fling_gesture_max_output_velocity">3000.0dip</dimen>
+    <item type="dimen" name="collapse_min_display_fraction">10.000002%</item>
+    <item type="dimen" name="expand_min_display_fraction">50.0%</item>
+    <item type="dimen" name="select_tab_fraction">70.00001%</item>
+    <dimen name="expand_accel">2000.0dip</dimen>
+    <dimen name="collapse_accel">2000.0dip</dimen>
+    <dimen name="global_screenshot_bg_padding">20.0dip</dimen>
+    <dimen name="navigation_key_width">60.0dip</dimen>
+    <dimen name="navigation_menu_key_width">40.0dip</dimen>
+    <dimen name="navbar_search_outerring_diameter">340.0dip</dimen>
+    <dimen name="navbar_search_outerring_radius">170.0dip</dimen>
+    <dimen name="navbar_search_panel_height">230.0dip</dimen>
+    <dimen name="close_handle_underlap">18.0dip</dimen>
+    <dimen name="blinds_pop_threshold">32.0dip</dimen>
+    <dimen name="pull_span_min">25.0dip</dimen>
+    <dimen name="statusbar_clock_size">11.5dip</dimen>
+    <dimen name="statusbar_carrier_size">11.5dip</dimen>
+    <dimen name="statusbar_cdma_carrier_size">4.5dip</dimen>
+    <dimen name="statusbar_battery_size">10.5dip</dimen>
+    <dimen name="statusbar_text_bottom_padding">0.0dip</dimen>
+    <dimen name="statusbar_battery_text_bottom_padding">0.30000007dip</dimen>
+    <dimen name="toggle_text_size">12.0sp</dimen>
+    <dimen name="expanded_date_size">11.0dip</dimen>
+    <dimen name="expanded_weather_size">12.0dip</dimen>
+    <dimen name="expanded_title_size">16.0sp</dimen>
+    <dimen name="expanded_content_size">11.0sp</dimen>
+    <dimen name="expanded_account_size">9.0sp</dimen>
+    <dimen name="expanded_search_text_size">12.0sp</dimen>
+    <dimen name="mtp_action_text_size">14.0sp</dimen>
+    <dimen name="no_notification_tips_text_size">13.0sp</dimen>
+    <dimen name="expanded_notification_blocker_text_size">12.0dip</dimen>
+    <dimen name="recent_task_item_horizontal_padding">10.0dip</dimen>
+    <dimen name="recent_task_txt_memory_margin_top">17.0dip</dimen>
+    <dimen name="recent_task_lock_flag_offset_icon_mode">1.0dip</dimen>
+    <dimen name="recent_task_lock_flag_offset_screenshot_mode">7.0dip</dimen>
+    <dimen name="recent_task_padding_bottom">12.0dip</dimen>
+    <dimen name="recent_task_no_recent_msg_padding_bottom">12.0dip</dimen>
+    <dimen name="recent_task_txt_memory_text_size">11.0sp</dimen>
+    <dimen name="recent_task_screenshot_to_bottom_min">120.0dip</dimen>
+    <dimen name="recent_task_icon_to_bottom_min">168.0dip</dimen>
+    <dimen name="recent_task_back_to_prev_padding">3.0dip</dimen>
+    <dimen name="recent_task_item_text_size">13.0dip</dimen>
+    <dimen name="recent_task_screenshot_menu_padding">10.0dip</dimen>
+    <dimen name="recent_task_button_interval">10.0dip</dimen>
+    <dimen name="recent_task_screenshot_menu_padding_bottom">20.0dip</dimen>
+    <dimen name="recent_task_screenshot_menu_padding_top">30.0dip</dimen>
+    <dimen name="recent_task_icon_menu_padding_bottom">20.0dip</dimen>
+    <dimen name="recent_task_music_element_height">118.0dip</dimen>
+    <dimen name="recent_task_shadow_height">8.0dip</dimen>
+    <dimen name="recent_task_title_padding_top">5.0dip</dimen>
+    <dimen name="expanded_header_height">134.0dip</dimen>
+    <dimen name="expanded_header_padding_top">3.0dip</dimen>
+    <dimen name="expanded_account_height">42.0dip</dimen>
+    <dimen name="expanded_header_search_anim_bottom_distance">11.0dip</dimen>
+    <dimen name="expanded_header_no_search_height">101.0dip</dimen>
+    <dimen name="expanded_header_no_search_padding_top">30.0dip</dimen>
+    <dimen name="expanded_status_bar_toggles_brightness_panel_height">68.0dip</dimen>
+    <dimen name="expanded_status_bar_land_toggles_brightness_panel_height">53.0dip</dimen>
+    <dimen name="expanded_status_bar_land_toggles_margin_top">23.0dip</dimen>
+    <dimen name="expanded_status_bar_toggle_min_width">60.0dip</dimen>
+    <dimen name="expanded_status_bar_toggle_max_width">70.0dip</dimen>
+    <dimen name="expanded_status_bar_toggle_single_page_width">70.0dip</dimen>
+    <dimen name="expanded_status_bar_toggle_max_height">95.0dip</dimen>
+    <dimen name="expanded_status_bar_toggle_max_land_height">81.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_panel_padding_bottom">25.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_panel_padding_left">32.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_panel_padding_right">32.0dip</dimen>
+    <dimen name="expanded_status_bar_land_brightness_panel_padding_bottom">20.0dip</dimen>
+    <dimen name="expanded_status_bar_land_brightness_panel_padding_left">45.0dip</dimen>
+    <dimen name="expanded_status_bar_land_brightness_panel_padding_right">45.0dip</dimen>
+    <dimen name="single_expanded_status_bar_brightness_panel_padding_left">32.0dip</dimen>
+    <dimen name="single_expanded_status_bar_brightness_panel_padding_right">32.0dip</dimen>
+    <dimen name="single_page_toggles_height">83.0dip</dimen>
+    <dimen name="single_page_toggles_land_height">83.0dip</dimen>
+    <dimen name="single_page_toggles_padding_between_rows">11.0dip</dimen>
+    <dimen name="single_page_toggles_land_padding_between_rows">0.0dip</dimen>
+    <dimen name="single_page_toggles_">83.0dip</dimen>
+    <dimen name="single_page_toggles_offset">8.0dip</dimen>
+    <dimen name="single_page_toggles_space">8.0dip</dimen>
+    <dimen name="single_page_clear_button_gap_bottom">12.0dip</dimen>
+    <dimen name="single_page_clear_button_gap_top">12.0dip</dimen>
+    <dimen name="single_page_brightness_panel_height">50.0dip</dimen>
+    <dimen name="dual_page_clear_button_margin_top">11.0dip</dimen>
+    <dimen name="dual_page_clear_button_margin_bottom">18.0dip</dimen>
+    <dimen name="notification_panel_title_margin_top">80.0dip</dimen>
+    <dimen name="notification_panel_title_margin_bottom">10.0dip</dimen>
+    <dimen name="notification_panel_clear_margin_top">15.0dip</dimen>
+    <dimen name="notification_panel_clear_margin_bottom">20.0dip</dimen>
+    <dimen name="notification_panel_app_info_text_size">23.0sp</dimen>
+    <dimen name="standard_notification_panel_width">640.0dip</dimen>
+    <item type="dimen" name="notification_panel_width">@dimen/match_parent</item>
+    <dimen name="notification_filter_view_width">36.0dip</dimen>
+    <dimen name="notification_edit_view_margin_bottom">16.0dip</dimen>
+    <dimen name="disable_notification_description_margin_bottom">14.0dip</dimen>
+    <dimen name="disable_notification_title_text_size">16.0sp</dimen>
+    <dimen name="dessert_case_cell_size">192.0dip</dimen>
+    <dimen name="phone_float_notification_shock_distance">5.0dip</dimen>
+    <dimen name="float_notification_content_width">333.0dip</dimen>
+    <dimen name="standard_float_notification_panel_width">390.0dip</dimen>
+    <item type="dimen" name="float_notification_panel_width">@dimen/match_parent</item>
+    <item type="dimen" name="screen_pinning_request_width">@dimen/match_parent</item>
+    <dimen name="match_parent">-1.0px</dimen>
+    <dimen name="screen_pinning_request_button_height">66.0dip</dimen>
+    <dimen name="screen_pinning_request_button_width">84.0dip</dimen>
+    <dimen name="screen_pinning_request_inner_padding">14.0dip</dimen>
+    <dimen name="screen_pinning_request_nav_icon_padding">18.0dip</dimen>
+    <dimen name="screen_pinning_request_nav_side_padding">7.0dip</dimen>
+    <dimen name="screen_pinning_request_side_width">34.0dip</dimen>
+    <dimen name="screen_pinning_request_frame_padding">0.0dip</dimen>
+    <dimen name="screen_pinning_nav_highlight_size">56.0dip</dimen>
+    <dimen name="screen_pinning_nav_highlight_outer_size">84.0dip</dimen>
+    <dimen name="managed_profile_toast_padding">4.0dip</dimen>
+    <dimen name="screenshot_thumbnail_padding_top">15.0dip</dimen>
+    <dimen name="screenshot_thumbnail_padding_right">0.0dip</dimen>
+    <dimen name="screenshot_display_button_height">66.0dip</dimen>
+    <dimen name="screenshot_stroke_width">0.33000004dip</dimen>
+    <dimen name="screenshot_scrollview_bitmap_margintop">0.0dip</dimen>
+    <dimen name="screenshot_actionbar_back_height">53.329987dip</dimen>
+    <dimen name="screenshot_bmp_paddingtop">7.6999817dip</dimen>
+    <dimen name="screenshot_bmp_paddingbottom">8.0dip</dimen>
+    <dimen name="screenshot_bmp_paddingtop_landscape">18.5dip</dimen>
+    <dimen name="screenshot_bmp_paddingbottom_landscape">15.699982dip</dimen>
+    <dimen name="screenshot_feedback_margin_right">10.0dip</dimen>
+    <dimen name="notification_side_padding">0.0dip</dimen>
+    <dimen name="notification_stack_margin_bottom">0.0dip</dimen>
+    <dimen name="top_stack_peek_amount">0.0dip</dimen>
+    <dimen name="bottom_stack_peek_amount">0.0dip</dimen>
+    <dimen name="z_distance_between_notifications">1.0dip</dimen>
+    <dimen name="notification_block_width">64.0dip</dimen>
+    <dimen name="block_notification_dialog_text_size">14.0sp</dimen>
+    <dimen name="qs_detail_item_height">51.0dip</dimen>
+    <dimen name="qs_detail_item_primary_text_size">14.0sp</dimen>
+    <dimen name="qs_detail_item_secondary_text_size">11.0sp</dimen>
+    <dimen name="qs_detail_connect_item_primary_text_size">14.0sp</dimen>
+    <dimen name="qs_detail_empty_text_size">14.0sp</dimen>
+    <dimen name="qs_detail_button_text_size">14.0sp</dimen>
+    <dimen name="qs_detail_header_text_size">16.0sp</dimen>
+    <dimen name="qs_detail_separated_text_size">11.0sp</dimen>
+    <dimen name="qs_detail_connect_start_radius">359.0dip</dimen>
+    <dimen name="qs_detail_connect_end_radius">609.0dip</dimen>
+    <dimen name="qs_detail_connect_animate_px">180.0dip</dimen>
+    <dimen name="qs_detail_connect_animate_py">445.0dip</dimen>
+    <dimen name="assist_orb_size">144.0dip</dimen>
+    <dimen name="assist_orb_base_margin">22.0dip</dimen>
+    <dimen name="assist_orb_travel_distance">26.0dip</dimen>
+    <dimen name="assist_orb_elevation">12.0dip</dimen>
+    <dimen name="assist_orb_scrim_height">250.0dip</dimen>
+    <dimen name="assist_orb_navbar_scrim_height">56.0dip</dimen>
+    <dimen name="assist_disclosure_thickness">2.5dip</dimen>
+    <dimen name="assist_disclosure_shadow_thickness">1.5dip</dimen>
+    <dimen name="expanded_notification_header_start">26.0dip</dimen>
+    <dimen name="expanded_notification_header_detail_start">25.0dip</dimen>
+    <dimen name="expanded_notification_toggle_padding">0.0dip</dimen>
+    <dimen name="expanded_notification_header_setting_bottom">7.0dip</dimen>
+    <dimen name="expanded_notification_header_setting_end">17.0dip</dimen>
+    <dimen name="expanded_notification_header_expand_end">56.0dip</dimen>
+    <dimen name="expanded_notification_header_expand_width">39.0dip</dimen>
+    <dimen name="expanded_notification_header_expand_height">39.0dip</dimen>
+    <dimen name="expanded_notification_header_expand_inner_padding">12.659973dip</dimen>
+    <dimen name="expanded_notification_weather_bottom">16.0dip</dimen>
+    <dimen name="expanded_notification_weather_temperature_right">10.0dip</dimen>
+    <dimen name="expanded_notification_weather_clock_bottom">20.0dip</dimen>
+    <dimen name="expanded_notification_detail_bottom">15.0dip</dimen>
+    <dimen name="notification_edit_view_margin_end">3.0dip</dimen>
+    <dimen name="expanded_notification_weather_content_bottom">0.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_seek_bar_padding_start">0.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_seek_bar_padding_end">0.0dip</dimen>
+    <dimen name="expanded_status_bar_brightness_seek_bar_padding_bottom">3.0dip</dimen>
+    <dimen name="single_page_brightness_panel_bottom">0.0dip</dimen>
+    <dimen name="oldman_status_bar_clock_text_size">16.0dip</dimen>
+    <dimen name="oldman_status_bar_clock_text_size_s">16.0dip</dimen>
+    <dimen name="oldman_status_bar_basic_text_size">16.0dip</dimen>
+    <dimen name="oldman_status_bar_incall_text_size">16.0dip</dimen>
+    <dimen name="oldman_status_bar_common_padding">4.0dip</dimen>
+    <dimen name="obstacle_spacing">380.0dip</dimen>
+    <dimen name="translation_per_sec">100.0dip</dimen>
+    <dimen name="boost_dv">550.0dip</dimen>
+    <dimen name="player_hit_size">40.0dip</dimen>
+    <dimen name="player_size">40.0dip</dimen>
+    <dimen name="obstacle_width">90.0dip</dimen>
+    <dimen name="obstacle_stem_width">12.0dip</dimen>
+    <dimen name="obstacle_gap">170.0dip</dimen>
+    <dimen name="obstacle_height_min">40.0dip</dimen>
+    <dimen name="building_width_min">20.0dip</dimen>
+    <dimen name="building_width_max">250.0dip</dimen>
+    <dimen name="building_height_min">20.0dip</dimen>
+    <dimen name="cloud_size_min">10.0dip</dimen>
+    <dimen name="cloud_size_max">100.0dip</dimen>
+    <dimen name="sun_size">45.0dip</dimen>
+    <dimen name="moon_size">30.0dip</dimen>
+    <dimen name="star_size_min">3.0dip</dimen>
+    <dimen name="star_size_max">5.0dip</dimen>
+    <dimen name="G">30.0dip</dimen>
+    <dimen name="max_v">1000.0dip</dimen>
+    <dimen name="scenery_z">6.0dip</dimen>
+    <dimen name="obstacle_z">18.0dip</dimen>
+    <dimen name="player_z">18.0dip</dimen>
+    <dimen name="player_z_boost">20.0dip</dimen>
+    <dimen name="hud_z">35.0dip</dimen>
+</resources>
