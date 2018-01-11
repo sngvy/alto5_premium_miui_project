@@ -2,7 +2,7 @@
 <com.android.systemui.taskmanager.TaskManagerView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.android.systemui.taskmanager.EfficientFrameLayout android:id="@id/mainContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
-        <com.android.systemui.taskmanager.EfficientTextView android:id="@id/background" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.android.systemui.taskmanager.EfficientTextView android:id="@id/background" android:background="#CC000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.android.systemui.taskmanager.EfficientTextView android:id="@id/adbackground" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.android.systemui.taskmanager.TasksView android:id="@id/tasksView" android:clickable="true" android:longClickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.android.systemui.taskmanager.EfficientTextView android:id="@id/adbutton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
