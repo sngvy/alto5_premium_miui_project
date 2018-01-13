@@ -134,6 +134,13 @@
     <dimen name="float_notification_content_width">333.0dip</dimen>
     <dimen name="standard_float_notification_panel_width">390.0dip</dimen>
     <item type="dimen" name="float_notification_panel_width">@dimen/match_parent</item>
+    <dimen name="optimized_float_notification_content_height">46.299988dip</dimen>
+    <dimen name="optimized_float_notification_content_margin">7.0dip</dimen>
+    <dimen name="optimized_float_notification_content_margin_end">12.0dip</dimen>
+    <dimen name="optimized_float_notification_icon_size">24.699982dip</dimen>
+    <dimen name="optimized_float_notification_text_size">13.299988sp</dimen>
+    <dimen name="optimized_float_notification_action_max_width">98.0dip</dimen>
+    <dimen name="optimized_float_notification_action_text_size">12.0sp</dimen>
     <item type="dimen" name="screen_pinning_request_width">@dimen/match_parent</item>
     <dimen name="match_parent">-1.0px</dimen>
     <dimen name="screen_pinning_request_button_height">66.0dip</dimen>

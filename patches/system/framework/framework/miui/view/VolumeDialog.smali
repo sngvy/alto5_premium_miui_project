@@ -357,7 +357,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_fa
+    if-eqz v0, :cond_f1
 
     :cond_d8
     new-instance v0, Lmiui/view/VolumeDialog$VolumeIconRes;
@@ -378,13 +378,7 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020040
-
-    const v4, 0x11020041
-
-    const v5, 0x1102003f
-
-    invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
+    invoke-direct {v2, v8, v9, v7, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -392,7 +386,7 @@
     return-void
 
     .line 111
-    :cond_fa
+    :cond_f1
     new-instance v0, Lmiui/view/VolumeDialog$VolumeIconRes;
 
     const v3, 0x11020048
