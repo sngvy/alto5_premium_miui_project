@@ -19,8 +19,8 @@
             <ImageView android:id="@id/battery_charging_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
             <com.g84.g84view.Taptap android:layout_width="wrap_content" android:layout_height="wrap_content">
                 <com.android.systemui.statusbar.phone.BatteryStatusIconView android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-                <TextView android:textAppearance="@style/TextAppearance.StatusBar.Battery" android:gravity="center" android:id="@id/battery_num" android:paddingBottom="@dimen/statusbar_battery_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="1.0dip" android:layout_marginEnd="3.0dip" />
             </com.g84.g84view.Taptap>
+                <TextView android:textAppearance="@style/TextAppearance.StatusBar.Battery" android:gravity="center" android:id="@id/battery_num" android:paddingBottom="@dimen/statusbar_battery_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="1.0dip" android:layout_marginEnd="3.0dip" />
         </com.android.systemui.statusbar.phone.StatusBarIcons>
     </RelativeLayout>
 </com.android.systemui.statusbar.phone.SimpleStatusBar>
