@@ -24,27 +24,6 @@
     <string name="VideoView_error_text_invalid_progressive_playback">Это видео не подходит для потокового воспроизведения на данном устройстве</string>
     <string name="selectTextMode">Выделить текст</string>
     <string name="status_bar_notification_info_overflow">>999</string>
-    <string name="profileNameDefault">Default</string>
-    <string name="profileNameWork">Work</string>
-    <string name="profileNameHome">Home</string>
-    <string name="profileNameSilent">Silent</string>
-    <string name="profileNameNight">Night</string>
-    <string name="profileNameAutomobile">Automobile</string>
-    <string name="profileGroupPhone">Phone</string>
-    <string name="profileGroupCalendar">Calendar</string>
-    <string name="profileGroupGmail">Gmail</string>
-    <string name="profileGroupEmail">Email</string>
-    <string name="profileGroupSMS">SMS</string>
-    <string name="wildcardProfile">Other</string>
-    <string name="profile_none">None</string>
-    <string name="profile_picker_title">Profiles</string>
-    <string name="global_action_choose_profile">Profile</string>
-    <string name="permgrouplab_security">Security</string>
-    <string name="permgroupdesc_security">Permissions related to device security information.</string>
-    <string name="permlab_readPhoneBlacklist">read phone blacklist</string>
-    <string name="permdesc_readPhoneBlacklist">Allows an app to read information about phone numbers that are blocked for incoming calls or messages.</string>
-    <string name="permlab_changePhoneBlacklist">change phone blacklist</string>
-    <string name="permdesc_changePhoneBlacklist">Allows an app to change the phone numbers that are blocked for incoming calls or messages.</string>
     <string name="config_ethernet_iface_regex">ethd</string>
     <string name="config_mobile_hotspot_provision_app_no_ui" />
     <string name="config_mobile_hotspot_provision_response" />
@@ -58,14 +37,12 @@
     <string name="config_fusedLocationProviderPackageName">com.qualcomm.location</string>
     <string name="config_hardwareFlpPackageName">com.android.location.fused</string>
     <string name="config_geocoderProviderPackageName">com.xiaomi.metoknlp</string>
-    <string name="config_geofenceServicesProvider">com.qualcomm.location</string>
     <string name="config_comboNetworkLocationProvider">com.qualcomm.location</string>
     <string name="config_datause_iface">rmnet0</string>
     <string name="default_sms_application">com.android.mms</string>
     <string name="config_default_dns_server">8.8.8.8</string>
     <string name="mobile_provisioning_apn" />
     <string name="mobile_provisioning_url" />
-    <string name="mobile_redirected_provisioning_url">http://google.com</string>
     <string name="gsm_alphabet_default_charset" />
     <string name="db_default_journal_mode">PERSIST</string>
     <string name="db_default_sync_mode">FULL</string>
@@ -93,18 +70,11 @@
     <string name="config_defaultNetworkScorerPackageName" />
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
     <string name="config_webViewPackageName">com.google.android.webview</string>
-    <string name="config_partial_segment_expire_age">2592000000</string>
     <string name="config_rat_2g">2G</string>
     <string name="config_rat_3g">3G</string>
     <string name="config_rat_4g">4G</string>
     <string name="prohibit_manual_network_selection_in_gobal_mode">false</string>
     <string name="locale_codes" />
-    <string name="def_custom_sys_ringtone" />
-    <string name="def_custom_sys_ringtone2" />
-    <string name="def_custom_sys_ringtone3" />
-    <string name="def_custom_sys_notification" />
-    <string name="def_custom_sys_mms" />
-    <string name="def_custom_sys_alarm" />
     <string name="numeric_date_template" formatted="false">%s.%s.%s</string>
     <string name="month_day_year" formatted="false">%-e %B %Y г.</string>
     <string name="time_of_day" formatted="false">%-k:%M:%S</string>
@@ -267,7 +237,6 @@
     <string name="silent_mode_silent">Без звука</string>
     <string name="silent_mode_vibrate">Вибрация</string>
     <string name="silent_mode_ring">Звук</string>
-    <string name="silent_mode_vibrate_with_ringtone">Vibrate with Ringtone</string>
     <string name="shutdown_progress">Выключение…</string>
     <string name="shutdown_confirm">Устройство будет выключено</string>
     <string name="shutdown_confirm_question">Выключить устройство?</string>
@@ -1016,8 +985,8 @@
     <string name="granularity_label_word">слово</string>
     <string name="granularity_label_link">ссылка</string>
     <string name="granularity_label_line">линия</string>
-    <string name="hour_ampm" formatted="false">%P %-l</string>
-    <string name="hour_cap_ampm" formatted="false">%p %-l</string>
+    <string name="hour_ampm" formatted="false">%-l%P</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">Ошибка теста</string>
     <string name="factorytest_not_system">Действие FACTORY_TEST поддерживается только для пакетов, установленных в /system/app</string>
     <string name="factorytest_no_action">Пакет, обеспечивающий действие FACTORY_TEST, не найден</string>
@@ -1424,7 +1393,7 @@
     <string name="submit">Отправить</string>
     <string name="car_mode_disable_notification_title">Включен режим \"Автомобиль\"</string>
     <string name="car_mode_disable_notification_message">Чтобы выйти, нажмите здесь</string>
-    <string name="tethered_notification_title">Модем или точка доступа активна</string>
+    <string name="tethered_notification_title">Точка доступа активна</string>
     <string name="tethered_notification_message">Нажмите для настройки</string>
     <string name="tethered_notification_no_device_message">Нет подключенных устройств</string>
     <string name="tethered_notification_one_device_message">Подключенных устройств: %1$s</string>
@@ -1734,7 +1703,6 @@
     <string name="time_placeholder">--</string>
     <string name="radial_numbers_typeface">sans-serif</string>
     <string name="sans_serif">sans-serif</string>
-    <string name="day_of_week_label_typeface">sans-serif</string>
     <string name="lock_to_app_toast">Для открепления одновременно нажмите и удерживайте клавиши \"Домой\" и \"Питание\"</string>
     <string name="lock_to_app_toast_accessible">Для открепления одновременно нажмите и удерживайте клавиши \"Домой\" и \"Питание\"</string>
     <string name="lock_to_app_toast_locked">Блокировка включена. Ее отключение запрещено правилами организации.</string>
@@ -1765,16 +1733,8 @@
     <string name="China_Telecom">China Telecom</string>
     <string name="permission_remember_choice">Напоминание</string>
     <string name="permission">Разрешения</string>
-    <string name="def_wifi_wifihotspot_ssid" />
     <string name="def_wifi_wifihotspot_pass" />
     <string name="def_wifi_direct_name" />
-    <string name="data_conn_status_title" />
-    <string name="user_authentication_failed" />
-    <string name="service_not_subscribed" />
-    <string name="def_hipri_share_component_pkg" />
-    <string name="def_hipri_share_component_class" />
-    <string name="card_string">CARD %1$s</string>
-    <string name="wt_lock_to_app_toast">To unpin this screen, touch and hold Back.</string>
     <string name="ellipsis">…</string>
     <string name="config_keyguardComponent">com.android.keyguard/com.android.keyguard.KeyguardService</string>
     <string name="lock_to_app_description">"Закрепление экрана блокировует его в одном положении.
