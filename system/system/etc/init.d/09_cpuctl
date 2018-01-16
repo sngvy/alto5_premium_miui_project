@@ -19,10 +19,6 @@ echo "$sf" > /dev/cpuctl/cgroup.procs
 for Y in `ls /proc/$sf/task`; do
 echo "$Y" > /dev/cpuctl/tasks
 done;
-if [ -e /dev/cpuctl/bg_non_interactive/cpu.shares ]; then
-echo "96" > /dev/cpuctl/bg_non_interactive/cpu.shares
-fi;
-echo OK > /dev/null 2>&1
 bd=$(busybox pgrep binder)
 echo "$bd" > /dev/cpuctl/cgroup.procs 
 for X in `ls /proc/$bd/task`; do
@@ -32,6 +28,12 @@ if [ -e /dev/cpuctl/cpu.shares ]; then
 echo "1024" > /dev/cpuctl/cpu.shares
 fi;
 echo OK > /dev/null 2>&1
-echo 800000 > /dev/cpuctl/cpu.rt_runtime_us
 echo 1000000 > /dev/cpuctl/cpu.rt_period_us
+echo 800000 > /dev/cpuctl/cpu.rt_runtime_us
+echo 1000000 > /dev/cpuctl/bg_non_interactive/cpu.rt_period_us
+echo 700000 > /dev/cpuctl/bg_non_interactive/cpu.rt_runtime_us
+echo 62 > /dev/cpuctl/bg_non_interactive/cpu.shares
+echo 1000000 > /dev/cpuctl/fg_service/cpu.rt_period_us
+echo 700000 > /dev/cpuctl/fg_service/cpu.rt_runtime_us
+echo 62 > /dev/cpuctl/fg_service/cpu.shares
 
