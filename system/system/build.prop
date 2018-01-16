@@ -312,8 +312,8 @@ sys.haptic.tap.normal=0,45,30,-5,5,0,10
 sys.haptic.tap.strong=0,80,40,-5,5,0,10
 persist.sys.button_jack_profile=volume
 persist.sys.button_jack_switch=0
-dalvik.vm.heapgrowthlimit=192m
-dalvik.vm.heapsize=320m
+dalvik.vm.heapgrowthlimit=68m
+dalvik.vm.heapsize=272m
 ro.xiaomi.signalbars=five
 persist.sys.miui_feature_config=/system/etc/miui_feature/lite.conf
 
