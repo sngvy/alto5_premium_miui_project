@@ -21,3 +21,6 @@ echo 0 > /sys/class/mmc_host/mmc0/clkgate_delay
 echo 5 > /sys/class/mmc_host/mmc1/clk_scaling/up_threshold
 echo 75 > /sys/class/mmc_host/mmc1/clk_scaling/down_threshold
 echo 0 > /sys/class/mmc_host/mmc1/clkgate_delay
+# ZRAM tweaks
+echo 2 > /sys/devices/virtual/block/zram0/queue/nomerges
+echo 1 > /sys/devices/virtual/block/zram0/queue/rq_affinity
