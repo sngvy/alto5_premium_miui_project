@@ -44,9 +44,9 @@ busybox sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 # Apply VM tweaks
 busybox sysctl -w vm.oom_dump_tasks=0
 busybox sysctl -w vm.oom_kill_allocating_task=1
-busybox sysctl -w vm.vfs_cache_pressure=150
+busybox sysctl -w vm.vfs_cache_pressure=1000
 busybox sysctl -w vm.overcommit_memory=1
-busybox sysctl -w vm.overcommit_ratio=150
+busybox sysctl -w vm.overcommit_ratio=25
 busybox sysctl -w vm.dirty_expire_centisecs=500
 busybox sysctl -w vm.dirty_writeback_centisecs=3000
 busybox sysctl -w vm.block_dump=0
@@ -57,7 +57,7 @@ busybox sysctl -w vm.min_free_order_shift=4
 busybox sysctl -w vm.page-cluster=2
 busybox sysctl -w vm.dirty_background_ratio=15
 busybox sysctl -w vm.dirty_ratio=30
-busybox sysctl -w vm.swappiness=80
+busybox sysctl -w vm.swappiness=100
 busybox sysctl -w vm.panic_on_oom=0
 # Apply kernel tweaks
 busybox sysctl -w kernel.random.read_wakeup_threshold=1708
