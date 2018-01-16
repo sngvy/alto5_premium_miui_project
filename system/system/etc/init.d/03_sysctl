@@ -59,6 +59,7 @@ busybox sysctl -w vm.dirty_background_ratio=15
 busybox sysctl -w vm.dirty_ratio=30
 busybox sysctl -w vm.swappiness=100
 busybox sysctl -w vm.panic_on_oom=0
+busybox sysctl -w vm.highmem_is_dirtyable=1
 # Apply kernel tweaks
 busybox sysctl -w kernel.random.read_wakeup_threshold=1708
 busybox sysctl -w kernel.random.write_wakeup_threshold=2048
@@ -78,5 +79,9 @@ busybox sysctl -w kernel.panic_on_oops=0
 busybox sysctl -w kernel.panic=0
 busybox sysctl -w fs.nr_open=1053696
 busybox sysctl -w kernel.threads-max=525810
+# Apply cpuctl tweaks
+busybox sysctl -w kernel.sched_rt_period_us=1000000
+busybox sysctl -w kernel.sched_rt_runtime_us=800000
+busybox sysctl -w kernel.sched_wake_to_idle=0
 # Drop caches after applying settings
 sync && busybox sysctl -w vm.drop_caches=3
