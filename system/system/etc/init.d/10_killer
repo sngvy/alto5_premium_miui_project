@@ -96,6 +96,7 @@ su -c pm enable com.google.android.gms/com.google.android.location.places.servic
 su -c pm disable com.google.android.gms/com.google.android.libraries.social.mediamonitor.MediaMonitorIntentService
 su -c pm disable com.google.android.gms/.config.ConfigService
 su -c pm disable com.google.android.gms/.measurement.PackageMeasurementService
+su -c pm disable com.google.android.gms/com.google.android.libraries.social.autobackup.FingerprintScannerIntentService
 su -c pm enable com.google.android.gms/.stats.PlatformStatsCollectorService
 su -c pm enable com.google.android.gms/.usagereporting.service.UsageReportingService
 su -c pm enable com.google.android.gms/.update.SystemUpdateService
