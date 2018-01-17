@@ -267,4 +267,10 @@
     <dimen name="glowpadview_glow_radius">75.0dip</dimen>
     <dimen name="glowpadview_inner_radius">15.0dip</dimen>
     <dimen name="system_bar_height">48.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_a8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ab">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ac">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ad">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ae">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_10f">false</item>
 </resources>
