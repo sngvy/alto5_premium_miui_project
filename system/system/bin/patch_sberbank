@@ -12,6 +12,6 @@ chmod -R 0755 /data/app/Sberbank/lib
 busybox chgrp -R system /data/app/Sberbank
 busybox chown -R system /data/app/Sberbank
 mount -o ro,remount,ro /data
-msg -t Перезапускаем систему...
+msg -t MIUI перезапускается...
 sleep 5
 reboot
