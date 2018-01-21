@@ -163,11 +163,11 @@
     .registers 10
 
     .prologue
-    const v9, 0x1102004d
+    const v9, 0x1102004c
 
-    const v8, 0x1102004c
+    const v8, 0x1102004b
 
-    const v7, 0x1102004b
+    const v7, 0x1102004a
 
     const/4 v6, 0x0
 
@@ -181,9 +181,9 @@
     .line 85
     new-instance v0, Lmiui/view/VolumeDialog$VolumeSeekbarProgress;
 
-    const v1, 0x110200ee
+    const v1, 0x110200ed
 
-    const v2, 0x110200f0
+    const v2, 0x110200ef
 
     invoke-direct {v0, v1, v2, v6}, Lmiui/view/VolumeDialog$VolumeSeekbarProgress;-><init>(IILmiui/view/VolumeDialog$1;)V
 
@@ -200,11 +200,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020037
+    const v3, 0x11020036
 
-    const v4, 0x11020038
+    const v4, 0x11020037
 
-    const v5, 0x11020036
+    const v5, 0x11020035
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -221,11 +221,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x1102003c
+    const v3, 0x1102003b
 
-    const v4, 0x1102003d
+    const v4, 0x1102003c
 
-    const v5, 0x1102003b
+    const v5, 0x1102003a
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -242,11 +242,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020044
+    const v3, 0x11020043
 
-    const v4, 0x11020045
+    const v4, 0x11020044
 
-    const v5, 0x11020043
+    const v5, 0x11020042
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -278,11 +278,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020052
+    const v3, 0x11020051
 
-    const v4, 0x11020053
+    const v4, 0x11020052
 
-    const v5, 0x11020051
+    const v5, 0x11020050
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -299,11 +299,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020056
+    const v3, 0x11020055
 
-    const v4, 0x1102005a
+    const v4, 0x11020059
 
-    const v5, 0x11020055
+    const v5, 0x11020054
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -320,11 +320,11 @@
 
     new-instance v2, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x1102005d
+    const v3, 0x1102005c
 
-    const v4, 0x1102005e
+    const v4, 0x1102005d
 
-    const v5, 0x1102005c
+    const v5, 0x1102005b
 
     invoke-direct {v2, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -389,11 +389,11 @@
     :cond_f1
     new-instance v0, Lmiui/view/VolumeDialog$VolumeIconRes;
 
-    const v3, 0x11020048
+    const v3, 0x11020047
 
-    const v4, 0x11020049
+    const v4, 0x11020048
 
-    const v5, 0x11020047
+    const v5, 0x11020046
 
     invoke-direct {v0, v3, v4, v5, v6}, Lmiui/view/VolumeDialog$VolumeIconRes;-><init>(IIILmiui/view/VolumeDialog$1;)V
 
@@ -2209,7 +2209,7 @@
     .line 353
     iget-object v2, p0, Lmiui/view/VolumeDialog;->mDialogView:Landroid/view/ViewGroup;
 
-    const v3, 0x110200ec
+    const v3, 0x110200eb
 
     invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
 
@@ -2759,7 +2759,7 @@
 
     if-eqz v0, :cond_29
 
-    const v0, 0x110200eb
+    const v0, 0x110200ea
 
     :goto_19
     invoke-virtual {v2, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
@@ -2786,7 +2786,7 @@
 
     .line 458
     :cond_29
-    const v0, 0x110200ed
+    const v0, 0x110200ec
 
     goto :goto_19
 .end method
