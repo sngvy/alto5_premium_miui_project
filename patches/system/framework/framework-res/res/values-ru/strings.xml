@@ -51,7 +51,7 @@
     <string name="config_mms_user_agent">Android-Mms/2.0</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
     <string name="config_isoImagePath" />
-    <string name="config_ntpServer">asia.pool.ntp.org</string>
+    <string name="config_ntpServer">2.android.pool.ntp.org</string>
     <string name="config_wimaxServiceJarLocation" />
     <string name="config_wimaxNativeLibLocation" />
     <string name="config_wimaxManagerClassname" />
@@ -1476,7 +1476,7 @@
     <string name="data_usage_warning_body">Проверить трафик и настройки</string>
     <string name="data_usage_3g_limit_title">Передача данных 2G/3G отключена</string>
     <string name="data_usage_4g_limit_title">Передача данных 4G отключена</string>
-    <string name="data_usage_mobile_limit_title">Мобильный нтернет отключен</string>
+    <string name="data_usage_mobile_limit_title">Мобильный интернет отключен</string>
     <string name="data_usage_wifi_limit_title">Передача данных через Wi-Fi отключена</string>
     <string name="data_usage_limit_body">Нажмите, чтобы включить</string>
     <string name="data_usage_3g_limit_snoozed_title">Превышен лимита трафика 2G и 3G</string>
