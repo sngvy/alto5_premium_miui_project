@@ -13,6 +13,7 @@
     <string name="open_personal_assistant_dialog_btn_confirm">ОК</string>
     <string name="recents_config_title">Меню недавних приложений</string>
     <string name="show_mem_info_title">Информация о памяти ОЗУ</string>
+    <string name="title_jeejen">Рабочий стол для пожилых</string>
     <string name="status_bar_and_notification_bar">Уведомления</string>
     <string name="status_bar_settings_manage_notification">Управление уведомлениями</string>
     <string name="status_bar_settings_all_app_display_loading">Загрузка…</string>
@@ -3709,7 +3710,7 @@
     <string name="launching_pho">Загрузка информации…</string>
     <string name="launching_cit">Запуск инженерного меню…</string>
     <string name="launching_rep">Отправка отчета об ошибках…</string>
-    <string name="status_serialno">серийный номер</string>
+    <string name="status_serialno">Серийный номер</string>
     <string name="privacy_mode_dialog_title">Режим \"Гость\"</string>
     <string name="privacy_mode_dialog_message">Скрыть журнал вызовов, сообщения, заметки, фото и другую личную информацию.</string>
     <string name="lockscreen_glogin_submit_button">Вход</string>
@@ -4140,6 +4141,7 @@
     <string name="music_dirac_mode_capsule">Mi Piston Air</string>
     <string name="music_dirac_mode_headset_comfort">Mi Comfort</string>
     <string name="music_dirac_mode_reduction_noise">Mi ANC Type-C</string>
+    <string name="music_dirac_mode_cancelling">Mi ANC (3.5mm)</string>
     <string name="music_audio_effect_settings">Звук</string>
     <string name="music_equalizer_summary">Индивидуальные установки для различных типов музыки</string>
     <string name="music_unsupport_effect_summary">USB-гарнитура не поддерживается</string>
