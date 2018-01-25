@@ -7,8 +7,6 @@ enabled=1;
 if [ "$state" -eq "$enabled" ]; then
 # Show message in logcat output
 	echo Smart Cover is enabled. Starting listener daemon...
-# Enable sysfs interface
-	chmod 0660 /sys/devices/soc.0/gpio_keys.65/init_ok && echo 1 > /sys/devices/soc.0/gpio_keys.65/init_ok
 else
 # Run toogle script
 	sh /system/bin/disable_hall && echo 0 > /sys/devices/soc.0/gpio_keys.65/init_ok && exit

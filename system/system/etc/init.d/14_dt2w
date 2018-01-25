@@ -8,8 +8,6 @@ enabled=1;
 if [ "$state" -eq "$enabled" ]; then
 # Show message in logcat output
 	echo DT2W is enabled. Starting listener daemon...
-# Enable sysfs interface
-	chmod 0660 /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id && echo 1 > /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id
 else
 # Run toogle script
 	sh /system/bin/disable_tp_gesture && echo 0 > /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id && exit
