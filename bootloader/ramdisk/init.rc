@@ -685,6 +685,16 @@ service pre-recovery /system/bin/uncrypt
     disabled
     oneshot
 
+# Enable gesture support
+on property:sys.boot_completed=1
+chmod 0660 /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id
+write /sys/devices/virtual/tp_gesture/tp_device/tp_gesture_id 2
+
+# Enable hall sensor
+on property:sys.boot_completed=1
+chmod 0660 /sys/devices/soc.0/gpio_keys.65/init_ok
+write /sys/devices/soc.0/gpio_keys.65/init_ok 1
+
 # Enable init.d support
 service sysinit /system/bin/logwrapper /system/xbin/busybox run-parts /system/etc/init.d
 	class late_start
