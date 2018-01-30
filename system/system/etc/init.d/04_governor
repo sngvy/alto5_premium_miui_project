@@ -7,22 +7,22 @@ echo interactive > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 # Set 1.2 GHz maximum frequency
 echo 1209600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 chmod 0444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
-# Set 400 MHz minimum frequency
-echo 400000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+# Set 200 MHz minimum frequency
+echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 chmod 0444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 # Set above_hispeed_delay
-echo 1000000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+echo 800000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
 # Set go_hispeed_load
-echo 99 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+echo 95 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
 echo 0444 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
 # Set hispeed_freq
-echo 400000 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+echo 200000 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
 chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
 # Fix lacks
 echo 100000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
 chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
 # Set target_loads
-echo 60 400000:20 533333:40 800000:60 998400:80 1094400:85 1152000:90 1209600:95 > /sys/devices/system/cpu/cpufreq/interactive/target_loads
+echo 30 200000:30 400000:45 533333:60 800000:75 998400:80 1094400:85 1152000:90 1209600:95 > /sys/devices/system/cpu/cpufreq/interactive/target_loads
 chmod 0444 /sys/devices/system/cpu/cpufreq/interactive/target_loads
 # Fix lacks
 echo 100000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
