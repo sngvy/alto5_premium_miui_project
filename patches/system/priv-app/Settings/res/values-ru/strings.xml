@@ -219,14 +219,14 @@
     <string name="bluetooth_show_received_files">Полученные файлы</string>
     <string name="device_picker">Выбор устройства Bluetooth</string>
     <string name="bluetooth_permission_request">Запрос разрешения на включение Bluetooth</string>
-    <string name="bluetooth_ask_enablement">Разрешить приложению включить Bluetooth?</string>
-    <string name="bluetooth_ask_discovery">Одному из приложений нужно, чтобы ваше устройство было доступно для поиска в течение %1$d сек. Включить Bluetooth?</string>
-    <string name="bluetooth_ask_lasting_discovery">Одному из приложений нужно, чтобы ваше устройство было доступно для поиска. Включить Bluetooth?</string>
+    <string name="bluetooth_ask_enablement">Разрешить приложению \"%1$s\" включить Bluetooth?</string>
+    <string name="bluetooth_ask_discovery">Приложению \"%1$s\" нужно, чтобы ваше устройство было доступно для поиска в течение %2$d сек. Включить Bluetooth?</string>
+    <string name="bluetooth_ask_lasting_discovery">Приложению \"%1$s\" нужно, чтобы ваше устройство было доступно для поиска. Включить Bluetooth?</string>
     <string name="bluetooth_ask_start_broadcast">%1$s пытается включить Bluetooth для соединения с другими устройствами</string>
     <string name="bluetooth_ask_enablement_and_start_broadcast">%1$s пытается включить Bluetooth для соединения с другими устройствами</string>
     <string name="bluetooth_broadcasting_explaination">Устройство сможет подключаться к другим устройствам. При передаче данных используется сигнал Bluetooth с низким энергопотреблением.</string>
-    <string name="bluetooth_ask_enablement_and_discovery">Одному из приложений нужно, чтобы ваше устройство было доступно для поиска в течение %1$d сек. Включить Bluetooth?</string>
-    <string name="bluetooth_ask_enablement_and_lasting_discovery">Одному из приложений нужно, чтобы ваше устройство было доступно для поиска. Включить Bluetooth?</string>
+    <string name="bluetooth_ask_enablement_and_discovery">Приложению \"%1$s\" нужно, чтобы ваше устройство было доступно для поиска в течение %2$d сек. Включить Bluetooth?</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery">Приложению \"%1$s\" нужно, чтобы ваше устройство было доступно для поиска. Включить Bluetooth?</string>
     <string name="bluetooth_turning_on">Включение Bluetooth…</string>
     <string name="bluetooth_turning_off">Отключение Bluetooth…</string>
     <string name="bluetooth_auto_connect">Автоматическое подключение</string>
@@ -1669,7 +1669,7 @@
     <string name="color_yellow">Желтый</string>
     <string name="color_magenta">Пурпурный</string>
     <string name="color_custom">\#%1$02X%2$02X%3$02X</string>
-    <string name="enable_service_title">Использовать %1$s?</string>
+    <string name="enable_service_title">Служба выполнит следующие действия:</string>
     <string name="capabilities_list_title">%1$s будет:</string>
     <string name="enable_service_encryption_warning">Если включить службу \"%1$s\", блокировка экрана будет отключена и надежность защиты зашифрованных данных снизится.</string>
     <string name="secure_lock_encryption_warning">Поскольку включена служба специальных возможностей, блокировка экрана будет отключена и надежность защиты зашифрованных данных может быть снижена.</string>
@@ -1736,6 +1736,7 @@
     <string name="awake">Время включения устройства</string>
     <string name="wifi_on_time">Время работы Wi-Fi</string>
     <string name="bluetooth_on_time">Время работы Wi-Fi</string>
+    <string name="usage_name_percent">"%1$s -  %2$s%%"</string>
     <string name="history_details_title">Подробная история</string>
     <string name="details_title">Сведения об использовании</string>
     <string name="details_subtitle">Сведения об использовании</string>
@@ -1885,7 +1886,7 @@
     <string name="tts_engine_name_is_enabled_summary">%s включен</string>
     <string name="tts_engine_name_is_disabled_summary">%s: отключено</string>
     <string name="tts_engine_settings_section">Настройки синтеза</string>
-    <string name="tts_engine_settings_title">Настройки %s</string>
+    <string name="tts_engine_settings_title">Настройки</string>
     <string name="pico_languages_and_voices">Языки и голос</string>
     <string name="pico_installed">Установлено</string>
     <string name="pico_not_installed">Не установлено</string>
@@ -4398,6 +4399,8 @@
     <string name="navigation_guide_recent_summary">Проведите вверх и подержите палец</string>
     <string name="navigation_guide_back_title">Возврат на последнюю страницу</string>
     <string name="navigation_guide_back_summary">Проведите влево или вправо</string>
+    <string name="navigation_guide_app_title">Переключение приложений</string>
+    <string name="navigation_guide_app_summary">Проведите пальцем влево или вправо от края экрана в верхней области экрана</string>
     <string name="title_dolby_control">Dolby Digital Plus</string>
     <string name="dolby_mode_off">Отключено</string>
     <string name="dolby_mode_music">Музыка</string>
