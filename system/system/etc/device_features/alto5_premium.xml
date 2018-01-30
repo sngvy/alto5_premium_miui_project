@@ -23,7 +23,7 @@
     <!--whether the device is emulated sdcard-->
     <bool name="is_emulated_sdcard">true</bool>
     <!--whether the device has dual sd card-->
-    <bool name="support_dual_sd_card">true</bool>
+    <bool name="support_dual_sd_card">false</bool>
     <!--whether the device supports bt debug trace-->
     <bool name="btdebug_enabled">false</bool>
     <!--whether the device supports page layout-->
@@ -52,6 +52,8 @@
     <bool name="support_dolby">false</bool>
     <!--whether the device supports screen effect-->
     <bool name="support_screen_effect">false</bool>
+    <!--whether support the new automatic brightness logic-->
+    <bool name="support_autobrightness_optimize">true</bool>
     <!--whether the device supports wapi-->
     <bool name="support_wapi">true</bool>
     <!--whether the device is mediatek-->
@@ -104,6 +106,8 @@
     <bool name="support_device_encrypt">true</bool>
     <!--whether support burst shoot in camera-->
     <bool name="support_camera_burst_shoot">true</bool>
+    <!--whether support burst shoot denoise in camera-->
+    <bool name="support_camera_burst_shoot_denoise">true</bool>
     <!--whether support solid recording in camera-->
     <bool name="support_camera_movie_solid">true</bool>
     <!--whether support shader effect in camera-->
