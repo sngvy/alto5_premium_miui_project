@@ -3,11 +3,12 @@
 # OOM fix for SystemUI
 echo -17 > /proc/`busybox pidof com.android.systemui`/oom_adj
 # OOM fix for MiuiHome
-echo -17 > /proc/`busybox pidof com.miui.home`/oom_adj
+echo 15 > /proc/`busybox pidof com.miui.home`/oom_adj
 # OOM fix for OTAUpdater
-echo -17 > /proc/`busybox pidof com.otaupdater`/oom_adj
+echo -16 > /proc/`busybox pidof com.otaupdater`/oom_adj
 # If these applications are started with system, they will be protected from unloading
-echo -17 > /proc/`busybox pidof com.vkontakte.android`/oom_adj
-echo -17 > /proc/`busybox pidof com.vkmp3mod.android`/oom_adj
-echo -17 > /proc/`busybox pidof org.telegram.messenger`/oom_adj
-echo -17 > /proc/`busybox pidof com.whatsapp`/oom_adj
+echo -16 > /proc/`busybox pidof com.vkontakte.android`/oom_adj
+echo -16 > /proc/`busybox pidof com.vkmp3mod.android`/oom_adj
+echo -16 > /proc/`busybox pidof org.telegram.messenger`/oom_adj
+echo -16 > /proc/`busybox pidof com.whatsapp`/oom_adj
+echo -16 > /proc/`busybox pidof com.skype.raider`/oom_adj
