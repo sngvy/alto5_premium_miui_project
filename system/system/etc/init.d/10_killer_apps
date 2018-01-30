@@ -2,6 +2,7 @@
 # Copyright (c) 2017, Stripalov. All rights reserved.
 # Force stop Google Play Services
 am force-stop com.google.android.gms
+am force-stop com.google.android.gms.persistent
 # Force stop Google Services Framework
 am force-stop com.google.process.gapps
 # Force stop Google Partner Setup
@@ -22,6 +23,8 @@ am force-stop android.process.media | kill -9 `busybox pidof mediaserver`
 am force-stop com.android.providers.downloads.ui | am force-stop com.android.providers.downloads
 # Force stop CalendarProvider
 am force-stop com.android.providers.calendar
+# Force stop Xperia Keyboard
+am force-stop com.sonyericsson.textinput.uxp
 # Force stop WPS
 am force-stop cn.wps.moffice_eng
 # Force stop Instagram
