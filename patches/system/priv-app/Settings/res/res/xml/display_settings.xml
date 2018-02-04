@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/screen" />
+    <Preference android:title="@string/brightness" android:key="brightness" android:fragment="com.android.settings.display.BrightnessFragment" />
+    <com.android.settings.display.ResolutionListPreference android:persistent="false" android:entries="@array/screen_resolution_entries" android:title="@string/screen_resolution_title" android:key="screen_resolution" android:summary="@string/screen_resolution_summary" android:positiveButtonText="@string/screen_resolution_confirm" android:entryValues="@array/screen_resolution_values" />
+    <miui.preference.ValuePreference android:title="@string/screen_paper_mode_title" android:key="screen_paper_mode" android:summary="@string/screen_paper_mode_summary" android:fragment="com.android.settings.display.PaperModeFragment" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/screen_monochrome_mode_title" android:key="screen_monochrome_mode" android:summary="@string/screen_monochrome_mode_summary" android:fragment="com.android.settings.display.MonochromeModeFragment" />
+    <Preference android:title="@string/screen_effect" android:key="screen_effect" android:fragment="com.android.settings.display.ScreenEffectFragment" />
+    <PreferenceCategory android:title="@string/touch_title" android:key="touch_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/touch_sensitive_title" android:key="touch_sensitive" android:summary="@string/touch_sensitive_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_font_current2" android:key="font_settings_cat">
+        <miui.preference.ValuePreference android:title="@string/title_font_current2" android:key="font_settings" />
+        <miui.preference.ValuePreference android:title="@string/title_layout_current2" android:key="page_layout_settings">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$PageLayoutActivity" />
+        </miui.preference.ValuePreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/system" />
+    <CheckBoxPreference android:title="@string/gesture_wakeup_title" android:key="gesture_wakeup" />
+    <com.android.settings.WarnedListPreference android:entries="@array/miui_entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+    <PreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.settings.DreamSettings" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/lift_to_wake_title" android:key="lift_to_wake" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/doze_title" android:key="doze" android:summary="@string/doze_summary" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="auto_rotate" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" android:summary="@string/led_pulse_summary" />
+    <PreferenceCategory android:title="@string/gesture_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_unlock_set_settings" android:title="@string/gesture_title" maxlines="15" android:key="gesture" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/enable_tp_gesture" runscript-off="/system/bin/disable_tp_gesture" needreboot="normal"/>
+    <AutoCheckBoxPreference android:icon="@drawable/ic_edge_mode_settings" android:title="@string/hall_title" maxlines="15" android:key="hall" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/enable_hall" runscript-off="/system/bin/disable_hall" needreboot="normal"/>
+    <PreferenceCategory android:title="@string/read_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_my_device" android:title="@string/read_title" maxlines="15" android:key="read" android:summary="@string/read_summary" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/enable_read" runscript-off="/system/bin/disable_read" needreboot="false"/>
+    <PreferenceCategory android:title="@string/nightscreen_category" />
+    <PreferenceScreen android:icon="@drawable/ic_display_settings" android:title="@string/nightscreen_title" android:key="nightscreen" android:summary="@string/nightscreen_summary">
+            <intent android:targetPackage="info.papdt.blackblub" android:action="android.intent.action.MAIN" android:targetClass="info.papdt.blackblub.ui.LaunchActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

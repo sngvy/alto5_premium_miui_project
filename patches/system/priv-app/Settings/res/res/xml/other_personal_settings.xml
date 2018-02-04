@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <Preference android:title="@string/date_and_time_settings_title" android:key="date_time_settings" android:fragment="com.android.settings.DateTimeSettings" />
+    <Preference android:title="@string/language_settings" android:key="language_settings" android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings" />
+    <miui.preference.ValuePreference android:title="@string/locale_settings" android:key="locale_settings" android:fragment="com.android.settings.locale.MiuiLocaleSettings" />
+    <PreferenceCategory />
+    <Preference android:title="@string/security_privacy_settings_title" android:key="security_privacy_settings" android:fragment="com.android.settings.SecuritySettings" />
+    <Preference android:title="@string/application_lock_name" android:key="application_lock_settings" android:fragment="com.android.settings.AccessControlFragment" />
+    <PreferenceCategory />
+    <Preference android:title="@string/pref_edge_handgrip" android:key="edge_mode_settings" android:fragment="com.android.settings.EdgeModeSettings" />
+    <PreferenceScreen android:title="@string/touch_assistant" android:key="touch_assistant">
+        <intent android:targetPackage="com.miui.touchassistant" android:action="miui.intent.action.TOUCH_ASSISTANT_SETTINGS" />
+    </PreferenceScreen>
+    <Preference android:title="@string/key_settings_title" android:key="key_settings" android:fragment="com.android.settings.KeySettings" />
+    <Preference android:title="@string/led_settings" android:key="led_settings" android:fragment="com.android.settings.LedSettings" />
+    <Preference android:title="@string/music_headset_settings" android:key="headset_settings" android:fragment="com.android.settings.HeadsetSettings" />
+    <Preference android:title="@string/handy_mode" android:key="handy_mode_settings" android:fragment="com.android.settings.display.HandyModeFragment" />
+    <Preference android:title="@string/accessibility_settings" android:key="accessibility_settings" android:fragment="com.android.settings.accessibility.AccessibilitySettings" />
+    <Preference android:title="@string/print_settings" android:key="print_settings" android:fragment="com.android.settings.print.PrintSettingsFragment" />
+    <PreferenceCategory android:key="category_development_settings" />
+    <Preference android:title="@string/development_settings_title" android:key="development_settings" android:fragment="com.android.settings.DevelopmentSettings" />
+    <PreferenceCategory android:key="category_privacy_settings" />
+    <Preference android:title="@string/privacy_settings" android:key="privacy_settings" android:fragment="com.android.settings.PrivacySettings" />
+    <PreferenceScreen android:title="@string/onekey_migrate" android:key="one_key_migrate">
+        <intent android:targetPackage="com.miui.backup" android:action="miui.intent.action.BACKUP_TRANSFER" />
+    </PreferenceScreen>
+        <PreferenceCategory android:title="@string/adoptable_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_storage_settings" android:title="@string/adoptable_title" maxlines="15" android:key="adoptable" android:summary="@string/adoptable_summary" android:defaultValue="true" notify-script="false" runscript-on="/system/bin/enable_adoptable" runscript-off="/system/bin/disable_adoptable" needreboot="normal"/>
+    <PreferenceCategory android:title="@string/killer_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_do_not_disturb_mode_settings" android:title="@string/killer_title" maxlines="15" android:key="services" android:summary="@string/killer_summary" android:defaultValue="true" notify-script="false" runscript-on="/system/bin/enable_killer" runscript-off="/system/bin/disable_killer" needreboot="normal"/>
+    <AutoCheckBoxPreference android:icon="@drawable/ic_account_autostar" android:title="@string/camera_title" maxlines="15" android:key="camera" android:summary="@string/camera_summary" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/disable_camera" runscript-off="/system/bin/enable_camera" needreboot="false"/>
+    <PreferenceScreen android:icon="@drawable/ic_oldman_mode_settings" android:title="@string/adaway_title" android:key="adaway" android:summary="@string/adaway_summary">
+        <intent android:targetPackage="org.adaway" android:action="android.intent.action.MAIN" android:targetClass="org.adaway.ui.BaseActivity" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/kernel_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_portable_wlan_hotspot_settings" android:title="@string/perf_title" maxlines="15" android:key="perf" android:summary="@string/perf_summary" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/enable_perf" runscript-off="/system/bin/disable_perf" needreboot="normal"/>
+    <AutoCheckBoxPreference android:icon="@drawable/ic_mobile_network_settings" android:title="@string/ttl_title" maxlines="15" android:key="ttl" android:summary="@string/ttl_summary" android:defaultValue="true" notify-script="false" runscript-on="/system/bin/enable_ttl" runscript-off="/system/bin/disable_ttl" needreboot="normal"/>
+    <PreferenceCategory android:title="@string/supersu_category" />
+    <AutoCheckBoxPreference android:icon="@drawable/ic_app_lock" android:title="@string/sberbank_title" maxlines="15" android:key="sberbank" android:summary="@string/sberbank_summary" android:defaultValue="false" notify-script="false" runscript-on="/system/bin/patch_sberbank" runscript-off="/system/bin/unpatch_sberbank"/>
+    <PreferenceScreen android:icon="@drawable/ic_app_permission" android:title="@string/supersu_title" android:key="supersu" android:summary="@string/supersu_summary">
+        <intent android:targetPackage="eu.chainfire.supersu" android:action="android.intent.action.MAIN" android:targetClass="eu.chainfire.supersu.MainActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>
