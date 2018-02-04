@@ -1,0 +1,4 @@
+#!/system/bin/sh
+# Copyright (c) 2018, Stripalov. All rights reserved.
+# Disable read mode
+settings put secure accessibility_display_daltonizer_enabled 0
