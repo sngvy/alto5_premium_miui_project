@@ -1,4 +1,4 @@
 #!/system/bin/sh
 # Copyright (c) 2017, Stripalov. All rights reserved.
 # Set up LMK levels
-echo 24576,24576,24576,24576,24576,131072 > /sys/module/lowmemorykiller/parameters/minfree
+echo 32768,32768,32768,32768,24576,131072 > /sys/module/lowmemorykiller/parameters/minfree
