@@ -30,12 +30,12 @@ ro.build.type=eng
 ro.build.user=brigudav
 ro.build.host=build
 ro.build.tags=test-keys
-ro.build.flavor=wt86047-eng
-ro.product.brand=Xiaomi
-ro.product.name=wt86047
-ro.product.device=wt86047
-ro.product.model=wt86047
-ro.product.mod_device=wt86047_pro
+ro.build.flavor=alto5_premium-eng
+ro.product.brand=TCL
+ro.product.name=7044X
+ro.product.device=alto5_premium
+ro.product.model=7044X
+ro.product.mod_device=7044X
 ro.product.board=msm8916
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.
@@ -44,13 +44,13 @@ ro.product.cpu.abi2=armeabi
 ro.product.cpu.abilist=armeabi-v7a,armeabi
 ro.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.product.cpu.abilist64=
-ro.product.manufacturer=Xiaomi
+ro.product.manufacturer=TCL
 ro.product.locale.language=en
 ro.product.locale.region=US
 ro.wifi.channels=
 ro.board.platform=msm8916
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=wt86047
+ro.build.product=alto5_premium
 # Do not try to parse description, fingerprint, or thumbprint
 ro.build.description=wt86047-user 5.1.1 LMY47V 6.3.31 test-keys
 ro.build.fingerprint=Xiaomi/wt86047/wt86047:5.1.1/LMY47V/6.3.31:eng/test-keys
