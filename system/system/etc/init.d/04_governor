@@ -11,7 +11,7 @@ chmod 0444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 chmod 0444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 # Set above_hispeed_delay
-echo 800000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+echo 3000000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
 # Set go_hispeed_load
 echo 95 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
 echo 0444 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
