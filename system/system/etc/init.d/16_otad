@@ -1,4 +1,10 @@
 #!/system/bin/sh
 # Copyright (c) 2018, Stripalov. All rights reserved.
+# Wait system ready
+sleep 120
+# Delete all previous firmwares
+rm -rf /storage/sdcard1/OTA-Updater
 # Send request to the receiver
-am broadcast -a android.intent.action.BOOT_COMPLETED -c android.intent.category.HOME -n com.otaupdater/.CheckinReceiver && echo -12 > /proc/`busybox pidof com.otaupdater`/oom_adj
+am broadcast -a android.intent.action.BOOT_COMPLETED -c android.intent.category.HOME -n com.otaupdater/.CheckinReceiver
+# OOM fix for OTAUpdater
+echo -12 > /proc/`busybox pidof com.otaupdater`/oom_adj
