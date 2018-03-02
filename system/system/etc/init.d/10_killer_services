@@ -11,150 +11,658 @@ else
 	sh /system/bin/disable_killer && exit
 fi
 # Disable Google activities
-su -c pm disable com.google.android.gms/.ads.settings.AdsSettingsActivity
-su -c pm disable com.google.android.gms/com.google.android.location.places.ui.aliaseditor.AliasEditorActivity
-su -c pm disable com.google.android.gms/com.google.android.location.places.ui.aliaseditor.AliasEditorMapActivity
-su -c pm disable com.google.android.gms/com.google.android.location.settings.ActivityRecognitionPermissionActivity
-su -c pm disable com.google.android.gms/com.google.android.location.settings.GoogleLocationSettingsActivity
-su -c pm disable com.google.android.gms/com.google.android.location.settings.LocationHistorySettingsActivity
-su -c pm disable com.google.android.gms/com.google.android.location.settings.LocationSettingsCheckerActivity
-su -c pm disable com.google.android.gms/.usagereporting.settings.UsageReportingActivity
-su -c pm disable com.google.android.gms/.ads.adinfo.AdvertisingInfoContentProvider
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingContentProvider
-su -c pm disable com.google.android.gms/com.google.android.location.internal.LocationContentProvider
-su -c pm enable com.google.android.gms/.common.stats.net.contentprovider.NetworkUsageContentProvider
-su -c pm disable com.google.android.gms/com.google.android.gms.ads.config.GServicesChangedReceiver
-su -c pm disable com.google.android.gms/com.google.android.contextmanager.systemstate.SystemStateReceiver
-su -c pm disable com.google.android.gms/.ads.jams.SystemEventReceiver
-su -c pm disable com.google.android.gms/.ads.config.FlagsReceiver
-su -c pm disable com.google.android.gms/.ads.social.DoritosReceiver
-su -c pm disable com.google.android.gms/.analytics.AnalyticsReceiver
-su -c pm disable com.google.android.gms/.analytics.internal.GServicesChangedReceiver
-su -c pm disable com.google.android.gms/.common.analytics.CoreAnalyticsReceiver
-su -c pm enable com.google.android.gms/.common.stats.GmsCoreStatsServiceLauncher
-su -c pm disable com.google.android.gms/com.google.android.location.internal.AnalyticsSamplerReceiver
-su -c pm disable com.google.android.gms/.checkin.CheckinService\$ActiveReceiver
-su -c pm disable com.google.android.gms/.checkin.CheckinService\$ClockworkFallbackReceiver
-su -c pm disable com.google.android.gms/.checkin.CheckinService\$ImposeReceiver
-su -c pm disable com.google.android.gms/.checkin.CheckinService\$SecretCodeReceiver
-su -c pm disable com.google.android.gms/.checkin.CheckinService\$TriggerReceiver
-su -c pm disable com.google.android.gms/.checkin.EventLogService\$Receiver
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.ExternalChangeReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.copresence.GcmRegistrationReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.copresence.GservicesBroadcastReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.internal.LocationProviderEnabler
-su -c pm disable com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.network.ConfirmAlertActivity\$LocationModeChangingReceiver
-su -c pm disable com.google.android.gms/com.google.android.location.places.ImplicitSignalsReceiver
-su -c pm disable com.google.android.gms/com.google.android.libraries.social.mediamonitor.MediaMonitor
-su -c pm disable com.google.android.gms/.location.copresence.GcmBroadcastReceiver
-su -c pm disable com.google.android.gms/.location.reporting.service.GcmBroadcastReceiver
-su -c pm disable com.google.android.gms/.social.location.GservicesBroadcastReceiver
-su -c pm disable com.google.android.gms/.update.SystemUpdateService\$Receiver
-su -c pm disable com.google.android.gms/.update.SystemUpdateService\$OtaPolicyReceiver
-su -c pm disable com.google.android.gms/.update.SystemUpdateService\$SecretCodeReceiver
-su -c pm disable com.google.android.gms/.update.SystemUpdateService\$ActiveReceiver
-su -c pm disable com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService
-su -c pm enable com.google.android.gms/.ads.AdRequestBrokerService
-su -c pm disable com.google.android.gms/.ads.GservicesValueBrokerService
-su -c pm disable com.google.android.gms/.ads.identifier.service.AdvertisingIdNotificationService
-su -c pm enable com.google.android.gms/.ads.identifier.service.AdvertisingIdService
-su -c pm disable com.google.android.gms/.ads.jams.NegotiationService
-su -c pm disable com.google.android.gms/.ads.pan.PanService
-su -c pm disable com.google.android.gms/.ads.social.GcmSchedulerWakeupService
-su -c pm disable com.google.android.gms/.analytics.AnalyticsService
-su -c pm disable com.google.android.gms/.analytics.internal.PlayLogReportingService
-su -c pm disable com.google.android.gms/.analytics.service.AnalyticsService
-su -c pm disable com.google.android.gms/.analytics.service.PlayLogMonitorIntervalService
-su -c pm disable com.google.android.gms/.analytics.service.RefreshEnabledStateService
-su -c pm disable com.google.android.gms/.auth.be.proximity.authorization.userpresence.UserPresenceService
-su -c pm disable com.google.android.gms/.common.analytics.CoreAnalyticsIntentService
-su -c pm enable com.google.android.gms/.common.stats.GmsCoreStatsService
-su -c pm disable com.google.android.gms/.backup.BackupStatsService
-su -c pm disable com.google.android.gms/.deviceconnection.service.DeviceConnectionAsyncService
-su -c pm disable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
-su -c pm disable com.google.android.gms/.wallet.service.analytics.AnalyticsIntentService
-su -c pm enable com.google.android.gms/.checkin.CheckinService
-su -c pm enable com.google.android.gms/.checkin.EventLogService
-su -c pm disable com.google.android.gms/com.google.android.location.internal.AnalyticsUploadIntentService
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.DeleteHistoryService
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.DispatchingService
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.InternalPreferenceServiceDoNotUse
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.LocationHistoryInjectorService
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService
-su -c pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingSyncService
-su -c pm disable com.google.android.gms/com.google.android.location.activity.HardwareArProviderService
-su -c pm disable com.google.android.gms/com.google.android.location.fused.FusedLocationService
-su -c pm disable com.google.android.gms/com.google.android.location.fused.service.FusedProviderService
-su -c pm disable com.google.android.gms/com.google.android.location.geocode.GeocodeService
-su -c pm disable com.google.android.gms/com.google.android.location.geofencer.service.GeofenceProviderService
-su -c pm enable com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService
-su -c pm disable com.google.android.gms/com.google.android.location.places.PlaylogService
-su -c pm enable com.google.android.gms/com.google.android.location.places.service.GeoDataService
-su -c pm enable com.google.android.gms/com.google.android.location.places.service.PlaceDetectionService
-su -c pm disable com.google.android.gms/com.google.android.libraries.social.mediamonitor.MediaMonitorIntentService
-su -c pm disable com.google.android.gms/.config.ConfigService
-su -c pm disable com.google.android.gms/.measurement.PackageMeasurementService
-su -c pm disable com.google.android.gms/com.google.android.libraries.social.autobackup.FingerprintScannerIntentService
-su -c pm enable com.google.android.gms/.stats.PlatformStatsCollectorService
-su -c pm enable com.google.android.gms/.usagereporting.service.UsageReportingService
-su -c pm enable com.google.android.gms/.update.SystemUpdateService
-su -c pm enable com.google.android.gms/com.google.android.location.network.ConfirmAlertActivity
-su -c pm enable com.google.android.gms/com.google.android.location.network.LocationProviderChangeReceiver
-su -c pm enable com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService
-su -c pm enable com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService
-su -c pm enable com.google.android.gms/com.google.android.location.network.NetworkLocationService
-su -c pm enable com.google.android.gms/com.google.android.location.util.PreferenceService
-su -c pm disable com.google.android.gsf/.update.SystemUpdateActivity
-su -c pm disable com.google.android.gsf/.update.SystemUpdatePanoActivity
-su -c pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$Receiver
-su -c pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$SecretCodeReceiver
-su -c pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$TriggerReceiver
-su -c pm disable com.google.android.gsf/.checkin.EventLogService\$Receiver
-su -c pm disable com.google.android.gsf/.update.SystemUpdateService\$Receiver
-su -c pm disable com.google.android.gsf/.update.SystemUpdateService\$SecretCodeReceiver
-su -c pm disable com.google.android.gsf/.checkin.CheckinService
-su -c pm disable com.google.android.gsf/.checkin.EventLogService
-su -c pm disable com.google.android.gsf/.update.SystemUpdateService
-su -c pm disable com.android.vending/com.google.android.finsky.flushlogs.FlushLogsReceiver\$FlushLogsService
-su -c pm disable com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksAlarmService
-# Disable Xiaomi and others activities
-su -c pm disable com.miui.player/com.xiaomi.push.service.XMPushService
-su -c pm disable com.miui.player/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.miui.yellowpage/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.browser/com.xiaomi.push.service.XMPushService
-su -c pm disable com.miui.cloudservice/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.thememanager/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.thememanager/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.android.settings/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.settings/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.android.fileexplorer/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.fileexplorer/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.facebook.katana/com.facebook.wallpaper.wallpaperprocess.FbWallpaperService
-su -c pm disable com.facebook.katana/com.facebook.vault.service.VaultConnectivityChangeReceiver
-su -c pm disable com.facebook.katana/com.facebook.oxygen.preloads.integration.dogfooding.AuthListener\$EmployeeLoggedInMarkerReceiver
-su -c pm disable com.facebook.katana/com.facebook.photos.upload.receiver.ConnectivityChangeReceiver
-su -c pm disable com.facebook.katana/com.facebook.deeplinking.activity.DeepLinkingLegacyAliasActivity
-su -c pm disable com.facebook.katana/com.facebook.katana.urimap.LinkSharingNativeComposerAliasActivity
-su -c pm disable com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity
-su -c pm disable com.android.email/com.kingsoft.email.service.LegacyEmailAuthenticatorService
-su -c pm disable com.android.email/com.kingsoft.email.service.LegacyEasAuthenticatorService
-su -c pm disable com.android.email/com.kingsoft.email.service.EmailUpgradeBroadcastReceiver
-su -c pm disable com.android.providers.downloads/com.xiaomi.push.service.XMPushService
-su -c pm disable com.android.providers.downloads/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.miui.fmradio/com.xiaomi.push.service.XMPushService
-su -c pm disable com.google.android.partnersetup/com.google.android.partnersetup.PhoneStateReceiver
-su -c pm disable com.twitter.android/com.twitter.android.samsung.single.TwitterWidgetProvider
-su -c pm disable com.xiaomi.market/com.xiaomi.push.service.XMPushService
-su -c pm disable com.xiaomi.market/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.xiaomi.payment/com.xiaomi.push.service.XMPushService
-su -c pm disable com.xiaomi.payment/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.miui.video/com.xiaomi.push.service.XMPushService
-su -c pm disable com.miui.video/com.miui.video.mipush.MediaPushMessageReceiver
-su -c pm disable com.xiaomi.xmsf/com.xiaomi.xmsf.push.service.XMPushService
-su -c pm disable com.xiaomi.xmsf/com.xiaomi.push.service.XMPushService
-su -c pm disable com.xiaomi.xmsf/com.xiaomi.push.service.receivers.PingReceiver
-su -c pm disable com.android.providers.media/com.android.providers.media.MediaScannerReceiver
-su -c pm disable cn.wps.moffice_eng/com.google.firebase.iid.FirebaseInstanceIdService
-su -c pm disable com.miui.cloudservice/.push.MicloudPushService
+pm enable com.google.android.gms/.checkin.CheckinService
+pm enable com.google.android.gms/.checkin.EventLogService
+pm enable com.google.android.gms/.update.SystemUpdateService
+pm disable com.google.android.gms/.update.SystemUpdateService\$Receiver
+pm disable com.google.android.gms/.update.SystemUpdateService\$OtaPolicyReceiver
+pm disable com.google.android.gms/.update.SystemUpdateService\$SecretCodeReceiver
+pm disable com.google.android.gms/.update.SystemUpdateService\$ActiveReceiver
+pm disable com.google.android.gms/.checkin.CheckinService\$ActiveReceiver
+pm disable com.google.android.gms/.checkin.CheckinService\$ClockworkFallbackReceiver
+pm disable com.google.android.gms/.checkin.CheckinService\$ImposeReceiver
+pm disable com.google.android.gms/.checkin.CheckinService\$SecretCodeReceiver
+pm disable com.google.android.gms/.checkin.CheckinService\$TriggerReceiver
+pm disable com.google.android.gms/.checkin.EventLogService\$Receiver
+pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$Receiver
+pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$TriggerReceiver
+pm disable com.google.android.gsf/com.google.android.gsf.checkin.CheckinService\$SecretCodeReceiver
+pm disable com.google.android.gsf/com.google.android.gsf.checkin.EventLogService\$Receiver
+pm disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService\$SecretCodeReceiver
+pm disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService\$Receiver
+pm disable com.google.android.gsf/com.google.android.gsf.loginservice.MigrateToAccountManagerBroadcastReceiver
+pm disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity
+pm disable com.google.android.gsf/com.google.android.gsf.update.SystemUpdatePanoActivity
+pm disable com.google.android.gsf/.checkin.CheckinService
+pm disable com.google.android.gsf/.checkin.EventLogService
+pm disable com.google.android.gsf/.update.SystemUpdateService
+pm disable com.google.android.gms/com.google.android.gms.checkin.CheckinService\$ActiveReceiver
+pm disable com.google.android.gms/com.google.android.gms.update.SystemUpdateService\$ActiveReceiver
+pm disable com.google.android.gms/.common.stats.GmsCoreStatsService
+pm disable com.google.android.gms/.ads.settings.AdsSettingsActivity
+pm disable com.google.android.gms/com.google.android.gms.ads.config.GServicesChangedReceiver
+pm disable com.google.android.gms/.ads.jams.SystemEventReceiver
+pm disable com.google.android.gms/.ads.config.FlagsReceiver
+pm disable com.google.android.gms/.ads.social.DoritosReceiver
+pm disable com.google.android.gms/.ads.adinfo.AdvertisingInfoContentProvider
+pm disable com.google.android.gms/.ads.GservicesValueBrokerService
+pm disable com.google.android.gms/.ads.identifier.service.AdvertisingIdNotificationService
+pm disable com.google.android.gms/.ads.jams.NegotiationService
+pm disable com.google.android.gms/.ads.pan.PanService
+pm disable com.google.android.gms/.ads.social.GcmSchedulerWakeupService
+pm disable com.google.android.gms/.ads.AdRequestBrokerService
+pm disable com.google.android.gms/.ads.identifier.service.AdvertisingIdService
+pm disable com.google.android.gms/.ads.measurement.GmpConversionTrackingBrokerService
+pm disable com.google.android.gms/.measurement.service.MeasurementBrokerService
+pm disable com.google.android.gms/.perfprofile.uploader.PerfProfileCollectorService
+pm disable com.google.android.gms/.perfprofile.uploader.RequestPerfProfileCollectionService
+pm disable com.google.android.gms/.usagereporting.settings.UsageReportingActivity
+pm disable com.google.android.gms/com.google.android.contextmanager.systemstate.SystemStateReceiver
+pm disable com.google.android.gms/.analytics.AnalyticsReceiver
+pm disable com.google.android.gms/.analytics.internal.GServicesChangedReceiver
+pm disable com.google.android.gms/.common.analytics.CoreAnalyticsReceiver
+pm disable com.google.android.gms/com.google.android.libraries.social.mediamonitor.MediaMonitor
+pm disable com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService
+pm disable com.google.android.gms/.analytics.AnalyticsService
+pm disable com.google.android.gms/.analytics.internal.PlayLogReportingService
+pm disable com.google.android.gms/.analytics.service.AnalyticsService
+pm disable com.google.android.gms/.analytics.service.PlayLogMonitorIntervalService
+pm disable com.google.android.gms/.analytics.service.RefreshEnabledStateService
+pm disable com.google.android.gms/.auth.be.proximity.authorization.userpresence.UserPresenceService
+pm disable com.google.android.gms/.common.analytics.CoreAnalyticsIntentService
+pm disable com.google.android.gms/.backup.stats.BackupStatsService
+pm disable com.google.android.gms/.deviceconnection.service.DeviceConnectionAsyncService
+pm disable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+pm disable com.google.android.gms/.wallet.service.analytics.AnalyticsIntentService
+pm disable com.google.android.gms/com.google.android.libraries.social.mediamonitor.MediaMonitorIntentService
+pm disable com.google.android.gms/.auth.trustagent.trustlet.GeofenceLogsService
+pm disable com.google.android.gms/.clearcut.service.ClearcutLoggerIntentService
+# Feedback
+pm disable com.google.android.gms/.feedback.AnnotateScreenshotActivity
+pm disable com.google.android.gms/.feedback.FeedbackActivity
+pm disable com.google.android.gms/.feedback.IntentListenerFeedbackActivity
+pm disable com.google.android.gms/.feedback.PreviewActivity
+pm disable com.google.android.gms/.feedback.PreviewScreenshotActivity
+pm disable com.google.android.gms/.feedback.ShowTextActivity
+pm disable com.google.android.gms/.feedback.SuggestionsActivity
+pm disable com.google.android.gms/.feedback.FeedbackConnectivityReceiver
+pm disable com.google.android.gms/.feedback.FeedbackAsyncService
+pm disable com.google.android.gms/.feedback.LegacyBugReportService
+pm disable com.google.android.gms/.feedback.SendService
+pm disable com.google.android.gms/.googlehelp.helpactivities.SystemAppTrampolineActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.ClickToCallActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.EmailActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.HelpActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.OpenHangoutActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.OpenHelpActivity
+pm disable com.google.android.gms/.googlehelp.helpactivities.RealtimeSupportClassifierActivity
+pm disable com.google.android.gms/.googlehelp.webview.GoogleHelpWebViewActivity
+pm disable com.google.android.gms/.googlehelp.GcmBroadcastReceiver
+pm disable com.google.android.gms/.googlehelp.metrics.ConnectivityBroadcastReceiver
+pm disable com.google.android.gms/.googlehelp.metrics.MetricsReportService
+pm disable com.google.android.gms/.googlehelp.metrics.ReportBatchedMetricsService
+pm disable com.google.android.gms/.googlehelp.service.ChatStatusUpdateService
+pm disable com.google.android.gms/.googlehelp.service.ClearHelpHistoryIntentService
+pm disable com.google.android.gms/.googlehelp.service.GoogleHelpService
+pm disable com.google.android.gms/.googlehelp.service.VideoCallStatusUpdateService
+# Vending
+pm disable com.android.vending/com.google.android.finsky.services.ContentSyncService
+# WiFi scan
+pm disable com.google.android.gms/.app.service.OneTimeInitializerService
+pm disable com.google.android.gms/.wifi.gatherer2.receiver.WifiStateChangeReceiver
+pm disable com.google.android.gms/.wifi.gatherer2.receiver.GoogleAccountChangeReceiver
+pm disable com.google.android.gms/.wifi.gatherer2.service.GcmReceiverService
+pm disable com.google.android.gms/.wifi.gatherer2.service.WifiUpdateRetryTaskService
+pm disable com.google.android.gms/.wifi.gatherer2.service.KeyManagerServce
+# Kids
+pm disable com.google.android.gms/.kids.account.AccountRemovalConfirmActivity
+pm disable com.google.android.gms/.kids.account.AccountSetupActivity
+pm disable com.google.android.gms/.kids.account.ShowAppsActivity
+pm disable com.google.android.gms/.kids.account.activities.RegisterProfileOwnerActivity
+pm disable com.google.android.gms/.kids.creation.activities.FamilyCreationActivity
+pm disable com.google.android.gms/.kids.chimera.KidsDataProviderProxy
+pm disable com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver
+pm disable com.google.android.gms/.kids.chimera.AccountChangeReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.AccountSetupCompletedReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.DeviceTimeAndDateChangeReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.InternalEventReceiverLmpProxy
+pm disable com.google.android.gms/.kids.chimera.InternalEventReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.LocationModeChangedReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.PackageChangedReceiverProxy
+pm disable com.google.android.gms/.kids.chimera.SystemEventReceiverProxy
+pm disable com.google.android.gms/.kids.common.sync.ManualSyncReceiver
+pm disable com.google.android.gms/.kids.GcmReceiverService
+pm disable com.google.android.gms/.kids.chimera.AccountSetupServiceProxy
+pm disable com.google.android.gms/.kids.chimera.KidsApiServiceProxy
+pm disable com.google.android.gms/.kids.chimera.KidsDataSyncServiceProxy
+pm disable com.google.android.gms/.kids.chimera.KidsServiceProxy
+pm disable com.google.android.gms/.kids.chimera.SlowOperationServiceProxy
+pm disable com.google.android.gms/.kids.chimera.TimeoutsSystemAlertServiceProxy
+pm disable com.google.android.gms/.kids.chimera.LongRunningServiceProxy
+pm disable com.google.android.gms/.kids.device.RingService
+# Nearby
+pm disable com.google.android.gms/.nearby.messages.settings.NearbyMessagesAppOptInActivity
+pm disable com.google.android.gms/.nearby.settings.NearbyAccessActivity
+pm disable com.google.android.gms/.nearby.settings.NearbySettingsActivity
+pm disable com.google.android.gms/.nearby.messages.NearbyMessagesBroadcastReceiver
+pm disable com.google.android.gms/.nearby.settings.NearbyAppUninstallReceiver
+pm disable com.google.android.gms/.nearby.bootstrap.service.NearbyBootstrapService
+pm disable com.google.android.gms/.nearby.messages.service.NearbyMessagesService
+pm disable com.google.android.gms/.nearby.sharing.service.NearbySharingService
+# Photos
+pm disable com.google.android.gms/.phenotype.receiver.PhenotypeBroadcastReceiver
+pm disable com.google.android.gms/.phenotype.service.PhenotypeCommitService
+pm disable com.google.android.gms/.phenotype.service.PhenotypeIntentService
+pm disable com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator
+pm disable com.google.android.gms/.phenotype.service.util.PhenotypeDebugService
+pm disable com.google.android.gms/.pseudonymous.service.PseudonymousIdIntentService
+pm disable com.google.android.gms/.pseudonymous.service.PseudonymousIdService
+pm disable com.google.android.gms/.photos.autobackup.ui.AutoBackupSettingsActivity
+pm disable com.google.android.gms/.photos.autobackup.ui.AutoBackupSettingsRedirectActivity
+pm disable com.google.android.gms/.photos.autobackup.ui.LocalFoldersBackupSettings
+pm disable com.google.android.gms/.photos.autobackup.ui.promo.AutoBackupPromoActivity
+pm disable com.google.android.gms/.photos.InitializePhotosIntentReceiver
+pm disable com.google.android.gms/.photos.autobackup.AutoBackupWorkService
+pkgs=`pm list packages -e 2>/dev/null`
+# Google Mail
+if busybox busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.gm$'; then
+pm disable com.google.android.gm/com.android.email.service.AttachmentService
+pm disable com.google.android.gm/com.android.email.service.EasAuthenticatorService
+pm disable com.google.android.gm/com.android.email.service.EasAuthenticatorServiceAlternate
+pm disable com.google.android.gm/com.android.email.service.LegacyEmailAuthenticatorService
+pm disable com.google.android.gm/com.android.email.service.LegacyEasAuthenticatorService
+pm disable com.google.android.gm/com.google.android.gm.EmailMigrationService
+fi;
+# Facebook
+if busybox printf "%s\n" $pkgs | grep 'package:com\.facebook\.katana$'; then
+pm disable com.facebook.katana/com.facebook.common.errorreporting.memory.MemoryDumpUploadService
+pm disable com.facebook.katana/com.facebook.videoads.scheduler.VideoAdsFetchService
+pm disable com.facebook.katana/com.facebook.analytics.service.AnalyticsService
+pm disable com.facebook.katana/com.facebook.places.suggestions.common.SuggestProfilePicUploadService
+pm disable com.facebook.orca/com.facebook.analytics.service.AnalyticsService
+fi;
+# Google Wear
+pm disable com.google.android.gms/com.google.android.gms.wearable.service.AutoStarterReceiver
+pm disable com.google.android.gms/com.google.android.gms.wearable.ui.WearableManageSpaceActivity
+pm disable com.google.android.gms/.wearable.node.bluetooth.BluetoothClientService
+pm disable com.google.android.gms/.wearable.node.bluetooth.BluetoothServerService
+pm disable com.google.android.gms/.wearable.node.btle.BtleCentralService
+pm disable com.google.android.gms/.wearable.node.emulator.NetworkConnectionService
+pm disable com.google.android.gms/.config.ConfigService
+pm disable com.google.android.gms/com.google.android.gms.common.GmsWearableListenerService
+# Google Music
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.music$'; then
+pm enable com.google.android.gms/.wearable.service.WearableService
+pm enable com.google.android.gms/.wearable.service.WearableControlService
+pm disable com.google.android.music/com.google.android.music.wear.WearMetadataSyncService
+pm disable com.google.android.music/com.google.android.music.wear.MusicWearableListenerService
+pm disable com.google.android.music/com.google.android.music.wear.WearDataTransferConnectionService
+pm disable com.google.android.music/com.google.android.wearable.datatransfer.DataSyncService
+else
+pm disable com.google.android.gms/.wearable.service.WearableService
+pm disable com.google.android.gms/.wearable.service.WearableControlService
+fi;
+# Fitness
+pm disable com.google.android.gms/.fitness.settings.FitnessSettingsActivity
+pm disable com.google.android.gms/.fitness.sync.FitnessContentProvider
+pm disable com.google.android.gms/.fitness.disconnect.FitDisconnectReceiver
+pm disable com.google.android.gms/.fitness.disconnect.FitCleanupService
+pm disable com.google.android.gms/.fitness.sensors.activity.ActivityRecognitionService
+pm disable com.google.android.gms/.fitness.sensors.floorchange.FloorChangeRecognitionService
+pm disable com.google.android.gms/.fitness.sensors.sample.CollectSensorService
+pm disable com.google.android.gms/.fitness.service.DebugIntentService
+pm disable com.google.android.gms/.fitness.service.ble.FitBleBroker
+pm disable com.google.android.gms/.fitness.service.config.FitConfigBroker
+pm disable com.google.android.gms/.fitness.service.history.FitHistoryBroker
+pm disable com.google.android.gms/.fitness.service.internal.FitInternalBroker
+pm disable com.google.android.gms/.fitness.service.proxy.FitProxyBroker
+pm disable com.google.android.gms/.fitness.service.recording.FitRecordingBroker
+pm disable com.google.android.gms/.fitness.service.sensors.FitSensorsBroker
+pm disable com.google.android.gms/.fitness.service.sessions.FitSessionsBroker
+pm disable com.google.android.gms/.fitness.store.maintenance.StoreMaintenanceService
+pm disable com.google.android.gms/.fitness.sync.FitnessSyncAdapterService
+pm disable com.google.android.gms/.fitness.wearables.WearableSyncService
+pm disable com.google.android.gms/com.google.android.gms.fitness.service.FitnessInitReceiver
+pm disable com.google.android.gms/com.google.android.gms.fitness.sensors.sample.CollectSensorReceiver
+pm disable com.google.android.gms/com.google.android.gms.fitness.wearables.WearableSyncServiceReceiver
+# Android wear
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.wearable\.app$'; then
+pm enable com.google.android.gms/com.google.android.gms.wearable.ui.WearableManageSpaceActivity
+pm enable com.google.android.gms/.fitness.wearables.WearableSyncService
+pm enable com.google.android.gms/.auth.be.proximity.authorization.userpresence.UserPresenceService
+pm enable com.google.android.gms/.wearable.service.WearableService
+pm enable com.google.android.gms/.wearable.service.WearableControlService
+pm enable com.google.android.gms/.wearable.node.bluetooth.BluetoothClientService
+pm enable com.google.android.gms/.wearable.node.bluetooth.BluetoothServerService
+pm enable com.google.android.gms/.wearable.node.btle.BtleCentralService
+pm enable com.google.android.gms/.wearable.node.emulator.NetworkConnectionService
+pm enable com.google.android.gms/.config.ConfigService
+pm enable com.google.android.gms/com.google.android.gms.wearable.service.AutoStarterReceiver
+pm enable com.google.android.gms/com.google.android.gms.common.GmsWearableListenerService
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+pm enable com.google.android.music/com.google.android.music.wear.WearMetadataSyncService
+pm enable com.google.android.music/com.google.android.music.wear.MusicWearableListenerService
+pm enable com.google.android.music/com.google.android.music.wear.WearDataTransferConnectionService
+pm enable com.google.android.music/com.google.android.wearable.datatransfer.DataSyncService
+fi;
+# FITBIT
+if busybox printf "%s\n" $pkgs | grep 'package:com\.fitbit\.FitbitMobile$'; then
+pm enable com.google.android.gms/.fitness.settings.FitnessSettingsActivity
+pm enable com.google.android.gms/.fitness.sync.FitnessContentProvider
+pm enable com.google.android.gms/.fitness.disconnect.FitDisconnectReceiver
+pm enable com.google.android.gms/.fitness.sensors.sample.CollectSensorReceiver
+pm enable com.google.android.gms/.fitness.service.FitnessInitReceiver
+pm enable com.google.android.gms/.fitness.wearables.WearableSyncServiceReceiver
+pm enable com.google.android.gms/.fitness.disconnect.FitCleanupService
+pm enable com.google.android.gms/.fitness.sensors.activity.ActivityRecognitionService
+pm enable com.google.android.gms/.fitness.sensors.floorchange.FloorChangeRecognitionService
+pm enable com.google.android.gms/.fitness.sensors.sample.CollectSensorService
+pm enable com.google.android.gms/.fitness.service.DebugIntentService
+pm enable com.google.android.gms/.fitness.service.ble.FitBleBroker
+pm enable com.google.android.gms/.fitness.service.config.FitConfigBroker
+pm enable com.google.android.gms/.fitness.service.history.FitHistoryBroker
+pm enable com.google.android.gms/.fitness.service.internal.FitInternalBroker
+pm enable com.google.android.gms/.fitness.service.proxy.FitProxyBroker
+pm enable com.google.android.gms/.fitness.service.recording.FitRecordingBroker
+pm enable com.google.android.gms/.fitness.service.sensors.FitSensorsBroker
+pm enable com.google.android.gms/.fitness.service.sessions.FitSessionsBroker
+pm enable com.google.android.gms/.fitness.store.maintenance.StoreMaintenanceService
+pm enable com.google.android.gms/.fitness.sync.FitnessSyncAdapterService
+pm enable com.google.android.gms/.fitness.wearables.WearableSyncService
+pm enable com.google.android.gms/.auth.be.proximity.authorization.userpresence.UserPresenceService
+pm enable com.google.android.gms/.config.ConfigService
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+fi;
+# Google Fit
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.apps\.fitness$'; then
+pm enable com.google.android.gms/.fitness.settings.FitnessSettingsActivity
+pm enable com.google.android.gms/.fitness.sync.FitnessContentProvider
+pm enable com.google.android.gms/.fitness.disconnect.FitDisconnectReceiver
+pm enable com.google.android.gms/.fitness.sensors.sample.CollectSensorReceiver
+pm enable com.google.android.gms/.fitness.service.FitnessInitReceiver
+pm enable com.google.android.gms/.fitness.wearables.WearableSyncServiceReceiver
+pm enable com.google.android.gms/.fitness.disconnect.FitCleanupService
+pm enable com.google.android.gms/.fitness.sensors.activity.ActivityRecognitionService
+pm enable com.google.android.gms/.fitness.sensors.floorchange.FloorChangeRecognitionService
+pm enable com.google.android.gms/.fitness.sensors.sample.CollectSensorService
+pm enable com.google.android.gms/.fitness.service.DebugIntentService
+pm enable com.google.android.gms/.fitness.service.ble.FitBleBroker
+pm enable com.google.android.gms/.fitness.service.config.FitConfigBroker
+pm enable com.google.android.gms/.fitness.service.history.FitHistoryBroker
+pm enable com.google.android.gms/.fitness.service.internal.FitInternalBroker
+pm enable com.google.android.gms/.fitness.service.proxy.FitProxyBroker
+pm enable com.google.android.gms/.fitness.service.recording.FitRecordingBroker
+pm enable com.google.android.gms/.fitness.service.sensors.FitSensorsBroker
+pm enable com.google.android.gms/.fitness.service.sessions.FitSessionsBroker
+pm enable com.google.android.gms/.fitness.store.maintenance.StoreMaintenanceService
+pm enable com.google.android.gms/.fitness.sync.FitnessSyncAdapterService
+pm enable com.google.android.gms/.fitness.wearables.WearableSyncService
+pm enable com.google.android.gms/.auth.be.proximity.authorization.userpresence.UserPresenceService
+pm enable com.google.android.gms/.config.ConfigService
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+fi;
+# Google Games
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.play\.games$'; then
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm enable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm enable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm enable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+else
+pm disable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm disable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm disable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm disable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm disable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm disable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm disable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm disable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm disable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm disable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm disable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+fi;
+# Google Car
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.projection\.gearhead$'; then
+pm enable com.google.android.gms/.car.BroadcastRedirectActivity
+pm enable com.google.android.gms/.car.CarErrorDisplayActivity
+pm enable com.google.android.gms/.car.CarHomeActivity
+pm enable com.google.android.gms/.car.CarHomeActivity1
+pm enable com.google.android.gms/.car.CarHomeActivity2
+pm enable com.google.android.gms/.car.CarServiceSettingsActivity
+pm enable com.google.android.gms/.car.FirstActivity
+pm enable com.google.android.gms/.car.SetupActivity
+pm enable com.google.android.gms/.car.CarIntentService
+pm enable com.google.android.gms/.car.CarService
+pm enable com.google.android.gms/.car.InCallServiceImpl
+pm enable com.google.android.gms/.car.VoiceActionService
+pm enable com.google.android.gms/.car.diagnostics.CrashReporterService
+else
+pm disable com.google.android.gms/.car.BroadcastRedirectActivity
+pm disable com.google.android.gms/.car.CarErrorDisplayActivity
+pm disable com.google.android.gms/.car.CarHomeActivity
+pm disable com.google.android.gms/.car.CarHomeActivity1
+pm disable com.google.android.gms/.car.CarHomeActivity2
+pm disable com.google.android.gms/.car.CarServiceSettingsActivity
+pm disable com.google.android.gms/.car.FirstActivity
+pm disable com.google.android.gms/.car.SetupActivity
+pm disable com.google.android.gms/.car.CarIntentService
+pm disable com.google.android.gms/.car.CarService
+pm disable com.google.android.gms/.car.InCallServiceImpl
+pm disable com.google.android.gms/.car.VoiceActionService
+pm disable com.google.android.gms/.car.diagnostics.CrashReporterService
+fi;
+# Location
+pm disable com.google.android.gms/com.google.android.location.places.ui.aliaseditor.AliasEditorActivity
+pm disable com.google.android.gms/com.google.android.location.places.ui.aliaseditor.AliasEditorMapActivity
+pm disable com.google.android.gms/com.google.android.location.places.ui.placepicker.PlacePickerActivity
+pm disable com.google.android.gms/com.google.android.location.settings.ActivityRecognitionPermissionActivity
+pm disable com.google.android.gms/com.google.android.location.places.service.PlaceDetectionService
+pm disable com.google.android.gms/com.google.android.location.settings.GoogleLocationSettingsActivity
+pm disable com.google.android.gms/com.google.android.location.settings.LocationHistorySettingsActivity
+pm disable com.google.android.gms/com.google.android.location.settings.LocationSettingsCheckerActivity
+pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingContentProvider
+pm disable com.google.android.gms/com.google.android.location.internal.LocationContentProvider
+pm disable com.google.android.gms/com.google.android.location.internal.AnalyticsSamplerReceiver
+pm disable com.google.android.gms/com.google.android.location.reporting.service.ExternalChangeReceiver
+pm disable com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver
+pm disable com.google.android.gms/com.google.android.location.copresence.GcmRegistrationReceiver
+pm disable com.google.android.gms/com.google.android.location.copresence.GservicesBroadcastReceiver
+pm disable com.google.android.gms/com.google.android.location.internal.LocationProviderEnabler
+pm disable com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+pm disable com.google.android.gms/com.google.android.location.network.ConfirmAlertActivity\$LocationModeChangingReceiver
+pm disable com.google.android.gms/.location.copresence.GcmBroadcastReceiver
+pm disable com.google.android.gms/.location.reporting.service.GcmBroadcastReceiver
+pm disable com.google.android.gms/.social.location.GservicesBroadcastReceiver
+pm disable com.google.android.gms/com.google.android.location.internal.AnalyticsUploadIntentService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.DeleteHistoryService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.DispatchingService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.InternalPreferenceServiceDoNotUse
+pm disable com.google.android.gms/com.google.android.location.places.service.GeoDataService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.LocationHistoryInjectorService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService
+pm disable com.google.android.gms/com.google.android.location.reporting.service.ReportingSyncService
+pm disable com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService
+pm disable com.google.android.gms/com.google.android.location.fused.FusedLocationService
+pm disable com.google.android.gms/com.google.android.location.fused.service.FusedProviderService
+pm disable com.google.android.gms/com.google.android.location.geofencer.service.GeofenceProviderService
+pm disable com.google.android.gms/com.google.android.location.places.PlaylogService
+pm disable com.google.android.gms/com.google.android.gms.social.location.GcmReceiverService
+pm disable com.google.android.gms/com.google.location.nearby.direct.service.NearbyDirectService
+# Google Maps
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.apps\.maps$'; then
+pm enable com.google.android.gms/com.google.android.location.places.ui.placepicker.PlacePickerActivity
+pm enable com.google.android.gms/com.google.android.location.places.service.GeoDataService
+pm enable com.google.android.gms/com.google.android.location.places.service.PlaceDetectionService
+fi;
+# China Baidu (MIUI CN)
+if busybox printf "%s\n" $pkgs | grep 'package:com\.htc\.cs\.pns$'; then
+pm disable com.htc.cs.pns/com.baidu.android.pushservice.PushService
+pm disable com.htc.cs.pns/com.baidu.android.pushservice.PushServiceReceiver
+pm disable com.htc.cs.pns/com.baidu.android.pushservice.RegistrationReceiver
+fi;
+# Google Hangouts
+pm disable com.google.android.gms/.people.sync.PeopleSyncService
+pm disable com.google.android.gms/.people.pub.PeopleSyncRawContactService
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.talk$'; then
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+pm enable com.google.android.gms/.people.sync.PeopleSyncService
+pm enable com.google.android.gms/.people.pub.PeopleSyncRawContactService
+pm enable com.google.android.gms/com.google.android.gms.social.location.GcmReceiverService
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.hangouts$'; then
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+pm enable com.google.android.gms/.people.sync.PeopleSyncService
+pm enable com.google.android.gms/.people.pub.PeopleSyncRawContactService
+pm enable com.google.android.gms/com.google.android.gms.social.location.GcmReceiverService
+fi;
+# Google Plus
+pm disable com.google.android.gms/.plus.activity.AccountSignUpActivity
+pm disable com.google.android.gms/.plus.apps.ListAppsActivity
+pm disable com.google.android.gms/.plus.apps.ManageAppActivity
+pm disable com.google.android.gms/.plus.apps.ManageDeviceActivity
+pm disable com.google.android.gms/.plus.apps.ManageMomentActivity
+pm disable com.google.android.gms/.plus.audience.AclSelectionActivity
+pm disable com.google.android.gms/.plus.audience.AudienceSearchActivity
+pm disable com.google.android.gms/.plus.audience.CircleCreationActivity
+pm disable com.google.android.gms/.plus.audience.CircleSelectionActivity
+pm disable com.google.android.gms/.plus.audience.FaclSelectionActivity
+pm disable com.google.android.gms/.plus.audience.UpdateActionOnlyActivity
+pm disable com.google.android.gms/.plus.audience.UpdateCirclesActivity
+pm disable com.google.android.gms/.plus.circles.AddToCircleConsentActivity
+pm disable com.google.android.gms/.plus.oob.PlusActivity
+pm disable com.google.android.gms/.plus.oob.UpgradeAccountActivity
+pm disable com.google.android.gms/.plus.oob.UpgradeAccountInfoActivity
+pm disable com.google.android.gms/.plus.plusone.PlusOneActivity
+pm disable com.google.android.gms/.plus.sharebox.AddToCircleActivity
+pm disable com.google.android.gms/.plus.sharebox.ReplyBoxActivity
+pm disable com.google.android.gms/.plus.sharebox.ShareBoxActivity
+pm disable com.google.android.gms/.plus.provider.PlusProvider
+pm disable com.google.android.gms/.plus.service.DefaultIntentService
+pm disable com.google.android.gms/.plus.service.ImageIntentService
+pm disable com.google.android.gms/.plus.service.OfflineActionSyncAdapterService
+pm disable com.google.android.gms/.plus.service.PlusService
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.apps\.plus$'; then
+pm enable com.google.android.gms/.plus.activity.AccountSignUpActivity
+pm enable com.google.android.gms/.plus.apps.ListAppsActivity
+pm enable com.google.android.gms/.plus.apps.ManageAppActivity
+pm enable com.google.android.gms/.plus.apps.ManageDeviceActivity
+pm enable com.google.android.gms/.plus.apps.ManageMomentActivity
+pm enable com.google.android.gms/.plus.audience.AclSelectionActivity
+pm enable com.google.android.gms/.plus.audience.AudienceSearchActivity
+pm enable com.google.android.gms/.plus.audience.CircleCreationActivity
+pm enable com.google.android.gms/.plus.audience.CircleSelectionActivity
+pm enable com.google.android.gms/.plus.audience.FaclSelectionActivity
+pm enable com.google.android.gms/.plus.audience.UpdateActionOnlyActivity
+pm enable com.google.android.gms/.plus.audience.UpdateCirclesActivity
+pm enable com.google.android.gms/.plus.circles.AddToCircleConsentActivity
+pm enable com.google.android.gms/.plus.oob.PlusActivity
+pm enable com.google.android.gms/.plus.oob.UpgradeAccountActivity
+pm enable com.google.android.gms/.plus.oob.UpgradeAccountInfoActivity
+pm enable com.google.android.gms/.plus.plusone.PlusOneActivity
+pm enable com.google.android.gms/.plus.sharebox.AddToCircleActivity
+pm enable com.google.android.gms/.plus.sharebox.ReplyBoxActivity
+pm enable com.google.android.gms/.plus.sharebox.ShareBoxActivity
+pm enable com.google.android.gms/.plus.provider.PlusProvider
+pm enable com.google.android.gms/.plus.service.DefaultIntentService
+pm enable com.google.android.gms/.plus.service.ImageIntentService
+pm enable com.google.android.gms/.plus.service.OfflineActionSyncAdapterService
+pm enable com.google.android.gms/.plus.service.PlusService
+pm disable com.google.android.apps.plus/com.google.android.libraries.social.autobackup.AutoBackupSyncService
+pm enable com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker
+pm enable com.google.android.gms/.people.sync.PeopleSyncService
+pm enable com.google.android.gms/.people.pub.PeopleSyncRawContactService
+fi;
+# Youtube
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.youtube$'; then
+pm disable com.google.android.youtube/com.google.android.libraries.youtube.ads.preload.PreloadVideosTransferService
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.ads.AdIdListenerService
+pm disable com.google.android.youtube/com.google.android.libraries.social.silentfeedback.nobinder.SilentFeedbackService
+pm disable com.google.android.youtube/com.google.android.libraries.youtube.upload.service.UploadService\$BootReceiver
+pm disable com.google.android.youtube/com.google.android.libraries.youtube.offline.transfer.service.OfflineTransferService\$DeviceStateReceiver
+pm disable com.google.android.youtube/com.google.android.libraries.youtube.ads.preload.PreloadVideosTransferService\$DeviceStateReceiver
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.notification.GcmBroadcastReceiver
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.PackageReplacedReceiver
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.honeycomb.phone.NewVersionAvailableActivity
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.InterstitialPromoActivity
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.honeycomb.LogCollectorActivity
+pm disable com.google.android.youtube/com.google.android.gms.ads.AdActivity
+pm disable com.google.android.youtube/com.google.android.gms.ads.purchase.InAppPurchaseActivity
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.ads.AdIdListener
+pm disable com.google.android.youtube/com.google.android.apps.youtube.app.system.LocaleUpdatedReceiver
+fi;
+# Google Mail Inbox
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.apps\.inbox$'; then
+pm disable com.google.android.apps.inbox/com.google.android.apps.bigtop.service.OfflineNotificationService
+pm disable com.google.android.apps.inbox/com.google.android.apps.bigtop.service.NotificationReceiverService
+fi;
+# Gameloft
+if [ -e /data/app/com.gameloft.android.* ]; then
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm enable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm enable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm enable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+fi;
+# Evolution
+if [ -e /data/app/com.my.evolution.* ]; then
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm enable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm enable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm enable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+fi;
+# Facebook
+if busybox printf "%s\n" $pkgs | grep 'package:com\.facebook\.katana$'; then
+pm disable com.facebook.katana/com.facebook.common.errorreporting.memory.MemoryDumpUploadService
+pm disable com.facebook.katana/com.facebook.videoads.scheduler.VideoAdsFetchService
+pm disable com.facebook.katana/com.facebook.analytics.service.AnalyticsService
+pm disable com.facebook.katana/com.facebook.places.suggestions.common.SuggestProfilePicUploadService
+fi;
+# Google quicksearch
+if busybox printf "%s\n" $pkgs | grep 'package:com\.google\.android\.googlequicksearchbox$'; then
+pm disable com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService
+pm disable com.google.android.googlequicksearchbox/com.google.android.hotword.benchmark.service.HotwordBenchmarkServiceImpl
+pm disable com.google.android.googlequicksearchbox/com.google.android.velvet.VelvetBackgroundTasksImpl\$Service
+pm disable com.google.android.googlequicksearchbox/com.google.android.sidekick.main.notifications.NotificationRefreshService
+pm disable com.google.android.googlequicksearchbox/com.google.android.voicesearch.handsfree.HeadsetQueryCommitService
+pm disable com.google.android.googlequicksearchbox/com.google.android.search.core.hotword.HotwordDownloadProcessorService
+pm disable com.google.android.googlequicksearchbox/com.android.launcher3.MemoryTracker
+pm disable com.google.android.googlequicksearchbox/com.google.android.remotesearch.RemoteSearchService
+fi;
+# EA
+if [ -e /data/app/com.ea.game.* ]; then
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm enable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm enable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm enable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+fi;
+# Ingress
+if busybox printf "%s\n" $pkgs | grep 'package:com\.nianticproject\.ingress$'; then
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.GamesSystemBroadcastReceiverProxy
+pm enable com.google.android.gms/com.google.android.gms.games.chimera.InternalIntentReceiverProxy
+pm enable com.google.android.gms/.games.chimera.GamesAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesAsyncServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSignInIntentServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy
+pm enable com.google.android.gms/.games.chimera.GamesSyncServiceNotificationProxy
+pm enable com.google.android.gms/.games.chimera.RoomAndroidServiceProxy
+pm enable com.google.android.gms/.games.chimera.GamesUploadServiceProxy
+pm enable com.google.android.gms/.games.chimera.SnapshotEventServiceProxy
+fi;
+# Yandex
+if busybox printf "%s\n" $pkgs | grep 'package:ru\.yandex\.yandexmaps$'; then
+pm disable ru.yandex.yandexmaps/com.yandex.auth.SystemEventHandler
+pm disable ru.yandex.yandexmaps/com.yandex.promolib.sync.YPLSyncReceiver
+pm disable ru.yandex.yandexmaps/ru.yandex.yandexmaps.receiver.ReferrerReceiver
+pm disable ru.yandex.yandexmaps/com.yandex.metrica.MetricaEventHandler
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:ru\.yandex\.rasp$'; then
+pm disable ru.yandex.rasp/com.yandex.auth.client.LoginAccountsChangedReceiver
+pm disable ru.yandex.rasp/com.yandex.metrica.MetricaEventHandler
+pm disable ru.yandex.rasp/com.yandex.promolib.sync.YPLSyncReceiver
+pm disable ru.yandex.rasp/com.yandex.auth.SystemEventHandler
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:ru\.yandex\.metro$'; then
+pm disable ru.yandex.metro/com.yandex.promolib.sync.YPLSyncReceiver
+pm disable ru.yandex.metro/ru.yandex.searchlib.notification.NotificationBroadcastReceiver
+pm disable ru.yandex.metro/ru.yandex.common.clid.ClidBroadcastReceiver
+pm disable ru.yandex.metro/com.yandex.metrica.MetricaEventHandler
+pm disable ru.yandex.metro/ru.yandex.metro.update.UpdateService
+pm disable ru.yandex.metro/com.yandex.metrica.MetricaService
+pm disable ru.yandex.metro/com.google.android.gms.gcm.GcmReceiver
+pm disable ru.yandex.metro/ru.yandex.metro.TaxiPromoActivity
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:org\.coolreader$'; then
+pm disable org.coolreader/org.coolreader.donations.BillingService
+pm disable org.coolreader/org.coolreader.donations.BillingReceiver
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:org\.softeg\.slartus\.forpda$'; then
+pm disable org.softeg.slartus.forpda/org.softeg.slartus.forpda.BootReceiver
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:org\.adaway$'; then
+pm disable org.adaway/org.adaway.service.BootReceiver
+pm disable org.adaway/com.commonsware.cwac.wakeful.AlarmReceiver
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:com\.estrongs\.android\.pop$'; then
+pm disable com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService
+pm disable com.estrongs.android.pop/com.baidu.share.message.ShareReceiver
+pm disable com.estrongs.android.pop/com.baidu.sapi2.utils.LoginProtectAcitivity
+fi;
+if busybox printf "%s\n" $pkgs | grep 'package:com\.mobilesrepublic\.appy$'; then
+pm disable com.mobilesrepublic.appy/com.google.market.Tracker
+pm disable com.mobilesrepublic.appy/com.mopub.mobileads.MraidActivity
+pm disable com.mobilesrepublic.appy/com.mopub.mobileads.MraidVideoPlayerActivity
+pm disable com.mobilesrepublic.appy/com.facebook.ads.InterstitialAdActivity
+pm disable com.mobilesrepublic.appy/com.facebook.ads.VideoAdActivity
+pm disable com.mobilesrepublic.appy/com.google.android.gms.ads.AdActivity
+pm disable com.mobilesrepublic.appy/com.google.android.gms.ads.purchase.InAppPurchaseActivity
+pm disable com.mobilesrepublic.appy/com.video.adsdk.internal.ADActivity
+pm disable com.mobilesrepublic.appy/com.google.ads.AdActivity
+fi;
+# Reduce Google Play Services
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'perform_market_checkin' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'market_force_checkin' and value = -1"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'checkin_interval'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:snet' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:snet_gcore' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:snet_idle' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:snet_launch_service' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:SYSTEM_RECOVERY_KMSG' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:system_update' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:event_log' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'checkin_dropbox_upload:SYSTEM_RECOVERY_LOG' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'ads:jams:is_enabled' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'false' where name = 'analytics.service_enabled' and value = 'true'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = '127.0.0.1' where name = 'url:feedback_url'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'market_force_checkin' and value = 1"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'secure:bandwidth_checkin_stat_interval'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'secure:send_action_app_error'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 0 where name = 'send_action_app_error'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'de,jp,kr,ru' where name = 'gms:lockbox:policy:disallow_logging_phone_sms_country_codes'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value = 'de,jp,kr,ru' where name = 'gms:lockbox:policy:disallow_logging_app_usage_country_codes'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update saved_secure set value = '0' where name = 'send_action_app_error'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update saved_global set value = '0' where name = 'send_action_app_error'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value='43200000' where name='gtalk_active_heartbeat_ping_interval_ms'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value='43200000' where name='gtalk_sync_heartbeat_ping_interval_ms'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value='43200000' where name='gtalk_nosync_heartbeat_ping_interval_ms'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value='43200000' where name='gtalk_heartbeat_ping_interval_ms'"
+/system/xbin/sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "update main set value='1800000' where name='gtalk_max_server_heartbeat_time'"
+/system/xbin/sqlite3 /data/data/com.android.providers.settings/databases/settings.db "update global set value = 0 where name = 'wifi_scan_always_enabled'"
+# Disable IPv6
+echo "1" > /proc/sys/net/ipv6/conf/all/disable_ipv6;
+echo "1" > /proc/sys/net/ipv6/conf/default/disable_ipv6;
+/system/bin/ip6tables -P INPUT DROP
+/system/bin/ip6tables -P OUTPUT DROP
+/system/bin/ip6tables -P FORWARD DROP
+# Remove logs
+rm -f /data/system/dropbox/*.txt
+rm -f /data/system/dropbox/*.gz
+rm -f /data/tombstones/*
+rm -f /data/tombstones/*.*
