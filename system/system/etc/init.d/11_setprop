@@ -1,7 +1,7 @@
 #!/system/bin/sh
 # Copyright (c) 2017, Stripalov. All rights reserved.
 # Fix device name
-setprop persist.sys.device_name "POP 2 (5) PREMIUM"
+setprop persist.sys.device_name "ONE TOUCH POP 2 (5) PREMIUM"
 # Get modem version from firmware image
 modemver=`su -c cat /firmware/verinfo/non.ver`
 setprop gsm.version.baseband $modemver
